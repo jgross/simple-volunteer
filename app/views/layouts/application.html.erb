@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SimpleVolunteer</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= javascript_importmap_tags %>
+     <link href='https://fonts.googleapis.com/css?family=Alef' rel='stylesheet'>
+<style>
+body {
+    font-family: 'Alef';font-size: 22px;
+}
+#plan {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#plan td, #plan th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#plan tr:nth-child(even){background-color: #f2f2f2;}
+
+#plan tr:hover {background-color: #ddd;}
+
+#plan th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04AA6D;
+  color: white;
+}
+</style>
+  </head>
+
+  <body dir='rtl'>
+    <%= yield %>
+  </body>
+</html>
