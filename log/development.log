@@ -3285,3 +3285,756 @@ Processing by WeeklyPlansController#show as HTML
 Completed 200 OK in 20ms (Views: 15.9ms | ActiveRecord: 0.2ms | Allocations: 6959)
 
 
+Started GET "/" for ::1 at 2023-11-01 23:03:20 +0200
+Started GET "/weekly_plans" for ::1 at 2023-11-01 23:03:20 +0200
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WeeklyPlansController#index as HTML
+Processing by Rails::WelcomeController#index as HTML
+Redirected to http://localhost:3000/weekly_plans/2023-44
+Completed 302 Found in 32ms (ActiveRecord: 0.0ms | Allocations: 1880)
+
+
+  Rendering /Users/jonathangross/.rbenv/versions/3.1.3/lib/ruby/gems/3.1.0/gems/railties-7.0.8/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/jonathangross/.rbenv/versions/3.1.3/lib/ruby/gems/3.1.0/gems/railties-7.0.8/lib/rails/templates/rails/welcome/index.html.erb (Duration: 2.0ms | Allocations: 536)
+Completed 200 OK in 55ms (Views: 8.5ms | ActiveRecord: 0.0ms | Allocations: 5880)
+
+
+Started GET "/weekly_plans/2023-44" for ::1 at 2023-11-01 23:03:20 +0200
+Processing by WeeklyPlansController#show as HTML
+  Parameters: {"id"=>"2023-44"}
+  [1m[36mWeeklyPlan Load (0.3ms)[0m  [1m[34mSELECT "weekly_plans".* FROM "weekly_plans" WHERE "weekly_plans"."week_number" = ? AND "weekly_plans"."year" = ? ORDER BY "weekly_plans"."id" ASC LIMIT ?[0m  [["week_number", 44], ["year", 2023], ["LIMIT", 1]]
+  ↳ app/controllers/weekly_plans_controller.rb:39:in `set_weekly_plan'
+  Rendering layout layouts/application.html.erb
+  Rendering weekly_plans/show.html.erb within layouts/application
+  Rendered weekly_plans/_weekly_plan.html.erb (Duration: 2.3ms | Allocations: 1834)
+  Rendered weekly_plans/show.html.erb within layouts/application (Duration: 7.3ms | Allocations: 3748)
+  Rendered layout layouts/application.html.erb (Duration: 69.6ms | Allocations: 38588)
+Completed 200 OK in 88ms (Views: 70.6ms | ActiveRecord: 0.6ms | Allocations: 47871)
+
+
+Started GET "/weekly_plans/2023-44" for ::1 at 2023-11-01 23:03:33 +0200
+Processing by WeeklyPlansController#show as HTML
+  Parameters: {"id"=>"2023-44"}
+  [1m[36mWeeklyPlan Load (0.2ms)[0m  [1m[34mSELECT "weekly_plans".* FROM "weekly_plans" WHERE "weekly_plans"."week_number" = ? AND "weekly_plans"."year" = ? ORDER BY "weekly_plans"."id" ASC LIMIT ?[0m  [["week_number", 44], ["year", 2023], ["LIMIT", 1]]
+  ↳ app/controllers/weekly_plans_controller.rb:39:in `set_weekly_plan'
+  Rendering layout layouts/application.html.erb
+  Rendering weekly_plans/show.html.erb within layouts/application
+  Rendered weekly_plans/_weekly_plan.html.erb (Duration: 1.8ms | Allocations: 1456)
+  Rendered weekly_plans/show.html.erb within layouts/application (Duration: 3.8ms | Allocations: 2898)
+  Rendered layout layouts/application.html.erb (Duration: 7.6ms | Allocations: 5499)
+Completed 200 OK in 15ms (Views: 9.1ms | ActiveRecord: 0.2ms | Allocations: 7255)
+
+
+Started GET "/weekly_plans/2023-44" for ::1 at 2023-11-01 23:03:45 +0200
+Processing by WeeklyPlansController#show as HTML
+  Parameters: {"id"=>"2023-44"}
+  [1m[36mWeeklyPlan Load (0.1ms)[0m  [1m[34mSELECT "weekly_plans".* FROM "weekly_plans" WHERE "weekly_plans"."week_number" = ? AND "weekly_plans"."year" = ? ORDER BY "weekly_plans"."id" ASC LIMIT ?[0m  [["week_number", 44], ["year", 2023], ["LIMIT", 1]]
+  ↳ app/controllers/weekly_plans_controller.rb:39:in `set_weekly_plan'
+  Rendering layout layouts/application.html.erb
+  Rendering weekly_plans/show.html.erb within layouts/application
+  Rendered weekly_plans/_weekly_plan.html.erb (Duration: 1.2ms | Allocations: 1466)
+  Rendered weekly_plans/show.html.erb within layouts/application (Duration: 2.1ms | Allocations: 2899)
+  Rendered layout layouts/application.html.erb (Duration: 4.2ms | Allocations: 5500)
+Completed 200 OK in 9ms (Views: 5.5ms | ActiveRecord: 0.1ms | Allocations: 7250)
+
+
+Started GET "/weekly_plans/2023-44" for ::1 at 2023-11-01 23:03:49 +0200
+Processing by WeeklyPlansController#show as HTML
+  Parameters: {"id"=>"2023-44"}
+  [1m[36mWeeklyPlan Load (0.3ms)[0m  [1m[34mSELECT "weekly_plans".* FROM "weekly_plans" WHERE "weekly_plans"."week_number" = ? AND "weekly_plans"."year" = ? ORDER BY "weekly_plans"."id" ASC LIMIT ?[0m  [["week_number", 44], ["year", 2023], ["LIMIT", 1]]
+  ↳ app/controllers/weekly_plans_controller.rb:39:in `set_weekly_plan'
+  Rendering layout layouts/application.html.erb
+  Rendering weekly_plans/show.html.erb within layouts/application
+  Rendered weekly_plans/_weekly_plan.html.erb (Duration: 1.3ms | Allocations: 1456)
+  Rendered weekly_plans/show.html.erb within layouts/application (Duration: 2.8ms | Allocations: 2898)
+  Rendered layout layouts/application.html.erb (Duration: 5.3ms | Allocations: 5499)
+Completed 200 OK in 12ms (Views: 7.3ms | ActiveRecord: 0.3ms | Allocations: 7249)
+
+
+Started GET "/weekly_plans/2023-44" for ::1 at 2023-11-01 23:03:52 +0200
+Processing by WeeklyPlansController#show as HTML
+  Parameters: {"id"=>"2023-44"}
+  [1m[36mWeeklyPlan Load (0.2ms)[0m  [1m[34mSELECT "weekly_plans".* FROM "weekly_plans" WHERE "weekly_plans"."week_number" = ? AND "weekly_plans"."year" = ? ORDER BY "weekly_plans"."id" ASC LIMIT ?[0m  [["week_number", 44], ["year", 2023], ["LIMIT", 1]]
+  ↳ app/controllers/weekly_plans_controller.rb:39:in `set_weekly_plan'
+  Rendering layout layouts/application.html.erb
+  Rendering weekly_plans/show.html.erb within layouts/application
+  Rendered weekly_plans/_weekly_plan.html.erb (Duration: 1.3ms | Allocations: 1468)
+  Rendered weekly_plans/show.html.erb within layouts/application (Duration: 4.9ms | Allocations: 2904)
+  Rendered layout layouts/application.html.erb (Duration: 8.7ms | Allocations: 5504)
+Completed 200 OK in 15ms (Views: 10.5ms | ActiveRecord: 0.2ms | Allocations: 7232)
+
+
+Started GET "/weekly_plans/2023-44" for ::1 at 2023-11-01 23:04:42 +0200
+Processing by WeeklyPlansController#show as HTML
+  Parameters: {"id"=>"2023-44"}
+  [1m[36mWeeklyPlan Load (0.3ms)[0m  [1m[34mSELECT "weekly_plans".* FROM "weekly_plans" WHERE "weekly_plans"."week_number" = ? AND "weekly_plans"."year" = ? ORDER BY "weekly_plans"."id" ASC LIMIT ?[0m  [["week_number", 44], ["year", 2023], ["LIMIT", 1]]
+  ↳ app/controllers/weekly_plans_controller.rb:39:in `set_weekly_plan'
+  Rendering layout layouts/application.html.erb
+  Rendering weekly_plans/show.html.erb within layouts/application
+  Rendered weekly_plans/_weekly_plan.html.erb (Duration: 1.5ms | Allocations: 909)
+  Rendered weekly_plans/show.html.erb within layouts/application (Duration: 7.2ms | Allocations: 2345)
+  Rendered layout layouts/application.html.erb (Duration: 20.4ms | Allocations: 4945)
+Completed 200 OK in 25ms (Views: 21.7ms | ActiveRecord: 0.2ms | Allocations: 6673)
+
+
+Started GET "/weekly_plans/2023-44" for ::1 at 2023-11-01 23:06:18 +0200
+Processing by WeeklyPlansController#show as HTML
+  Parameters: {"id"=>"2023-44"}
+  [1m[36mWeeklyPlan Load (0.2ms)[0m  [1m[34mSELECT "weekly_plans".* FROM "weekly_plans" WHERE "weekly_plans"."week_number" = ? AND "weekly_plans"."year" = ? ORDER BY "weekly_plans"."id" ASC LIMIT ?[0m  [["week_number", 44], ["year", 2023], ["LIMIT", 1]]
+  ↳ app/controllers/weekly_plans_controller.rb:39:in `set_weekly_plan'
+  Rendering layout layouts/application.html.erb
+  Rendering weekly_plans/show.html.erb within layouts/application
+  Rendered weekly_plans/_shift.html.erb (Duration: 23.3ms | Allocations: 8851)
+  Rendered weekly_plans/_weekly_plan.html.erb (Duration: 25.5ms | Allocations: 9484)
+  Rendered weekly_plans/show.html.erb within layouts/application (Duration: 46.2ms | Allocations: 10939)
+  Rendered layout layouts/application.html.erb (Duration: 46.2ms | Allocations: 11024)
+Completed 500 Internal Server Error in 51ms (ActiveRecord: 0.2ms | Allocations: 12740)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `days' for #<ActionView::Base:0x0000000000b798>
+
+@output_buffer.safe_append='      <td>'.freeze;@output_buffer.append=( days[vol] );@output_buffer.safe_append=' '.freeze;@output_buffer.append=( (@weekly_plan.sunday_of_cweek + vol.days).strftime("%d/%m"));@output_buffer.safe_append='</td>
+                                                                       ^^^^):
+    3:     <tr>
+    4:     <td> שעות </td>
+    5:     <%(0..5).each do |vol| %>
+    6:       <td><%= days[vol] %> <%= (@weekly_plan.sunday_of_cweek + vol.days).strftime("%d/%m")%></td>
+    7:       <td>שם מתנדב</td>
+    8:     <%end %>
+    9:     </tr>
+  
+app/views/weekly_plans/_shift.html.erb:6
+app/views/weekly_plans/_shift.html.erb:5
+app/views/weekly_plans/_weekly_plan.html.erb:11
+app/views/weekly_plans/_weekly_plan.html.erb:7
+app/views/weekly_plans/show.html.erb:3
+Started GET "/weekly_plans/2023-44" for ::1 at 2023-11-01 23:06:33 +0200
+Processing by WeeklyPlansController#show as HTML
+  Parameters: {"id"=>"2023-44"}
+  [1m[36mWeeklyPlan Load (0.1ms)[0m  [1m[34mSELECT "weekly_plans".* FROM "weekly_plans" WHERE "weekly_plans"."week_number" = ? AND "weekly_plans"."year" = ? ORDER BY "weekly_plans"."id" ASC LIMIT ?[0m  [["week_number", 44], ["year", 2023], ["LIMIT", 1]]
+  ↳ app/controllers/weekly_plans_controller.rb:39:in `set_weekly_plan'
+  Rendering layout layouts/application.html.erb
+  Rendering weekly_plans/show.html.erb within layouts/application
+  Rendered weekly_plans/_shift.html.erb (Duration: 0.8ms | Allocations: 730)
+  Rendered weekly_plans/_shift.html.erb (Duration: 0.1ms | Allocations: 209)
+  Rendered weekly_plans/_weekly_plan.html.erb (Duration: 3.0ms | Allocations: 2001)
+  Rendered weekly_plans/show.html.erb within layouts/application (Duration: 4.5ms | Allocations: 3455)
+  Rendered layout layouts/application.html.erb (Duration: 7.7ms | Allocations: 6070)
+Completed 200 OK in 12ms (Views: 9.4ms | ActiveRecord: 0.1ms | Allocations: 7794)
+
+
+Started GET "/weekly_plans/2023-44" for ::1 at 2023-11-01 23:07:22 +0200
+Processing by WeeklyPlansController#show as HTML
+  Parameters: {"id"=>"2023-44"}
+  [1m[36mWeeklyPlan Load (0.1ms)[0m  [1m[34mSELECT "weekly_plans".* FROM "weekly_plans" WHERE "weekly_plans"."week_number" = ? AND "weekly_plans"."year" = ? ORDER BY "weekly_plans"."id" ASC LIMIT ?[0m  [["week_number", 44], ["year", 2023], ["LIMIT", 1]]
+  ↳ app/controllers/weekly_plans_controller.rb:39:in `set_weekly_plan'
+  Rendering layout layouts/application.html.erb
+  Rendering weekly_plans/show.html.erb within layouts/application
+  Rendered weekly_plans/_shift.html.erb (Duration: 0.9ms | Allocations: 746)
+  Rendered weekly_plans/_shift.html.erb (Duration: 0.1ms | Allocations: 210)
+  Rendered weekly_plans/_weekly_plan.html.erb (Duration: 2.8ms | Allocations: 2027)
+  Rendered weekly_plans/show.html.erb within layouts/application (Duration: 3.9ms | Allocations: 3469)
+  Rendered layout layouts/application.html.erb (Duration: 8.7ms | Allocations: 6069)
+Completed 200 OK in 12ms (Views: 9.7ms | ActiveRecord: 0.1ms | Allocations: 7797)
+
+
+Started GET "/weekly_plans/2023-44" for ::1 at 2023-11-01 23:08:06 +0200
+Processing by WeeklyPlansController#show as HTML
+  Parameters: {"id"=>"2023-44"}
+  [1m[36mWeeklyPlan Load (0.1ms)[0m  [1m[34mSELECT "weekly_plans".* FROM "weekly_plans" WHERE "weekly_plans"."week_number" = ? AND "weekly_plans"."year" = ? ORDER BY "weekly_plans"."id" ASC LIMIT ?[0m  [["week_number", 44], ["year", 2023], ["LIMIT", 1]]
+  ↳ app/controllers/weekly_plans_controller.rb:39:in `set_weekly_plan'
+  Rendering layout layouts/application.html.erb
+  Rendering weekly_plans/show.html.erb within layouts/application
+  Rendered weekly_plans/_weekly_plan.html.erb (Duration: 6.0ms | Allocations: 1390)
+  Rendered weekly_plans/show.html.erb within layouts/application (Duration: 7.8ms | Allocations: 2852)
+  Rendered layout layouts/application.html.erb (Duration: 7.9ms | Allocations: 2938)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.1ms | Allocations: 4653)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <div id="<%= dom_id weekly_plan %>">
+
+  <p>
+    <strong>שבוע:</strong>
+    <%= weekly_plan.week_number %>
+  </p>
+  <%= form_for(weekly_plan) do |form| %>
+
+  <%= render partial: 'shift', locals:{weekly_plan: weekly_plan,i:0, time_range: '10:30-14:30', name: 'משמרת בוקר'}%>
+  <%= render partial: 'shift', locals:{weekly_plan: weekly_plan,i:100 time_range: '14:30-19:00', name: 'משמרת ערב'}%>
+
+   <%= link_to 'שבוע קודם' , weekly_plan_path(id: "#{Date.today.year}-#{weekly_plan.week_number - 1}")%>
+    <%= form.submit "עדכן תוכנית" ,style: 'font-size:20px'%>
+   
+   <%= link_to 'שבוע הבא' , weekly_plan_path(id: "#{Date.today.year}-#{weekly_plan.week_number + 1}")%>
+<% end %>
+
+</div>
+
+):
+1:    <div id="<%= dom_id weekly_plan %>">
+2:    
+3:      <p>
+4:        <strong>שבוע:</strong>
+5:        <%= weekly_plan.week_number %>
+6:      </p>
+7:      <%= form_for(weekly_plan) do |form| %>
+8:    
+9:      <%= render partial: 'shift', locals:{weekly_plan: weekly_plan,i:0, time_range: '10:30-14:30', name: 'משמרת בוקר'}%>
+10:      <%= render partial: 'shift', locals:{weekly_plan: weekly_plan,i:100 time_range: '14:30-19:00', name: 'משמרת ערב'}%>
+11:    
+12:       <%= link_to 'שבוע קודם' , weekly_plan_path(id: "#{Date.today.year}-#{weekly_plan.week_number - 1}")%>
+13:        <%= form.submit "עדכן תוכנית" ,style: 'font-size:20px'%>
+14:       
+15:       <%= link_to 'שבוע הבא' , weekly_plan_path(id: "#{Date.today.year}-#{weekly_plan.week_number + 1}")%>
+16:    <% end %>
+17:    
+18:    </div>
+  
+app/views/weekly_plans/_weekly_plan.html.erb:10: syntax error, unexpected local variable or method, expecting '}'
+app/views/weekly_plans/_weekly_plan.html.erb:10: syntax error, unexpected ',', expecting ')'
+app/views/weekly_plans/_weekly_plan.html.erb:10: syntax error, unexpected '}', expecting ')'
+app/views/weekly_plans/_weekly_plan.html.erb:16: syntax error, unexpected `end', expecting ')'
+app/views/weekly_plans/_weekly_plan.html.erb:21: syntax error, unexpected `end', expecting ')'
+app/views/weekly_plans/_weekly_plan.html.erb:10: syntax error, unexpected local variable or method, expecting '}'
+app/views/weekly_plans/_weekly_plan.html.erb:10: syntax error, unexpected ',', expecting ')'
+app/views/weekly_plans/_weekly_plan.html.erb:10: syntax error, unexpected '}', expecting ')'
+app/views/weekly_plans/_weekly_plan.html.erb:16: syntax error, unexpected `end', expecting ')'
+app/views/weekly_plans/_weekly_plan.html.erb:21: syntax error, unexpected `end', expecting ')'
+app/views/weekly_plans/_weekly_plan.html.erb:10: syntax error, unexpected local variable or method, expecting '}'
+app/views/weekly_plans/_weekly_plan.html.erb:10: syntax error, unexpected ',', expecting ')'
+app/views/weekly_plans/_weekly_plan.html.erb:10: syntax error, unexpected '}', expecting ')'
+app/views/weekly_plans/_weekly_plan.html.erb:16: syntax error, unexpected `end', expecting ')'
+app/views/weekly_plans/_weekly_plan.html.erb:21: syntax error, unexpected `end', expecting ')'
+app/views/weekly_plans/_weekly_plan.html.erb:10: syntax error, unexpected local variable or method, expecting '}'
+app/views/weekly_plans/_weekly_plan.html.erb:10: syntax error, unexpected ',', expecting ')'
+app/views/weekly_plans/_weekly_plan.html.erb:10: syntax error, unexpected '}', expecting ')'
+app/views/weekly_plans/_weekly_plan.html.erb:16: syntax error, unexpected `end', expecting ')'
+app/views/weekly_plans/_weekly_plan.html.erb:21: syntax error, unexpected `end', expecting ')'
+app/views/weekly_plans/show.html.erb:3
+Started GET "/weekly_plans/2023-44" for ::1 at 2023-11-01 23:08:22 +0200
+Processing by WeeklyPlansController#show as HTML
+  Parameters: {"id"=>"2023-44"}
+  [1m[36mWeeklyPlan Load (0.1ms)[0m  [1m[34mSELECT "weekly_plans".* FROM "weekly_plans" WHERE "weekly_plans"."week_number" = ? AND "weekly_plans"."year" = ? ORDER BY "weekly_plans"."id" ASC LIMIT ?[0m  [["week_number", 44], ["year", 2023], ["LIMIT", 1]]
+  ↳ app/controllers/weekly_plans_controller.rb:39:in `set_weekly_plan'
+  Rendering layout layouts/application.html.erb
+  Rendering weekly_plans/show.html.erb within layouts/application
+  Rendered weekly_plans/_shift.html.erb (Duration: 0.9ms | Allocations: 730)
+  Rendered weekly_plans/_shift.html.erb (Duration: 0.1ms | Allocations: 180)
+  Rendered weekly_plans/_weekly_plan.html.erb (Duration: 4.6ms | Allocations: 1981)
+  Rendered weekly_plans/show.html.erb within layouts/application (Duration: 6.4ms | Allocations: 3438)
+  Rendered layout layouts/application.html.erb (Duration: 22.7ms | Allocations: 6053)
+Completed 200 OK in 27ms (Views: 25.7ms | ActiveRecord: 0.1ms | Allocations: 7771)
+
+
+Started PATCH "/weekly_plans/1" for ::1 at 2023-11-01 23:08:30 +0200
+Processing by WeeklyPlansController#update as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "weekly_plan"=>{"data"=>["יוני", "גל", "חג", "גד", "", "", "", "", "", "", "", "", "", "", "", "", "", "רון", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "מיכאל", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", ""]}, "commit"=>"עדכן תוכנית", "id"=>"1"}
+  [1m[36mWeeklyPlan Load (0.2ms)[0m  [1m[34mSELECT "weekly_plans".* FROM "weekly_plans" WHERE "weekly_plans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/weekly_plans_controller.rb:41:in `set_weekly_plan'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/weekly_plans_controller.rb:22:in `block in update'
+  [1m[36mWeeklyPlan Update (1.4ms)[0m  [1m[33mUPDATE "weekly_plans" SET "data" = ?, "updated_at" = ? WHERE "weekly_plans"."id" = ?[0m  [["data", "---\n- יוני\n- גל\n- חג\n- גד\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- רון\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- מיכאל\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n"], ["updated_at", "2023-11-01 21:08:30.846922"], ["id", 1]]
+  ↳ app/controllers/weekly_plans_controller.rb:22:in `block in update'
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/weekly_plans_controller.rb:22:in `block in update'
+Redirected to http://localhost:3000/weekly_plans/1
+Completed 302 Found in 13ms (ActiveRecord: 2.6ms | Allocations: 7163)
+
+
+Started GET "/weekly_plans/1" for ::1 at 2023-11-01 23:08:30 +0200
+Processing by WeeklyPlansController#show as TURBO_STREAM
+  Parameters: {"id"=>"1"}
+  [1m[36mWeeklyPlan Load (0.1ms)[0m  [1m[34mSELECT "weekly_plans".* FROM "weekly_plans" WHERE "weekly_plans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/weekly_plans_controller.rb:41:in `set_weekly_plan'
+  Rendering layout layouts/application.html.erb
+  Rendering weekly_plans/show.html.erb within layouts/application
+  Rendered weekly_plans/_shift.html.erb (Duration: 0.4ms | Allocations: 402)
+  Rendered weekly_plans/_shift.html.erb (Duration: 0.1ms | Allocations: 180)
+  Rendered weekly_plans/_weekly_plan.html.erb (Duration: 0.9ms | Allocations: 1225)
+  Rendered weekly_plans/show.html.erb within layouts/application (Duration: 1.3ms | Allocations: 2446)
+  Rendered layout layouts/application.html.erb (Duration: 3.6ms | Allocations: 4753)
+Completed 200 OK in 5ms (Views: 3.9ms | ActiveRecord: 0.1ms | Allocations: 5585)
+
+
+Started GET "/weekly_plans/1" for ::1 at 2023-11-01 23:08:35 +0200
+Processing by WeeklyPlansController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mWeeklyPlan Load (0.1ms)[0m  [1m[34mSELECT "weekly_plans".* FROM "weekly_plans" WHERE "weekly_plans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/weekly_plans_controller.rb:41:in `set_weekly_plan'
+  Rendering layout layouts/application.html.erb
+  Rendering weekly_plans/show.html.erb within layouts/application
+  Rendered weekly_plans/_shift.html.erb (Duration: 0.7ms | Allocations: 393)
+  Rendered weekly_plans/_shift.html.erb (Duration: 0.2ms | Allocations: 180)
+  Rendered weekly_plans/_weekly_plan.html.erb (Duration: 2.5ms | Allocations: 1159)
+  Rendered weekly_plans/show.html.erb within layouts/application (Duration: 4.7ms | Allocations: 2280)
+  Rendered layout layouts/application.html.erb (Duration: 7.7ms | Allocations: 4464)
+Completed 200 OK in 10ms (Views: 8.2ms | ActiveRecord: 0.1ms | Allocations: 5211)
+
+
+Started PATCH "/weekly_plans/1" for ::1 at 2023-11-01 23:08:58 +0200
+Processing by WeeklyPlansController#update as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "weekly_plan"=>{"data"=>["יוני", "גל", "חג", "גד", "", "", "", "", "גוג", "", "", "", "", "", "", "", "", "רון", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", ""]}, "commit"=>"עדכן תוכנית", "id"=>"1"}
+  [1m[36mWeeklyPlan Load (0.1ms)[0m  [1m[34mSELECT "weekly_plans".* FROM "weekly_plans" WHERE "weekly_plans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/weekly_plans_controller.rb:41:in `set_weekly_plan'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/weekly_plans_controller.rb:22:in `block in update'
+  [1m[36mWeeklyPlan Update (0.4ms)[0m  [1m[33mUPDATE "weekly_plans" SET "data" = ?, "updated_at" = ? WHERE "weekly_plans"."id" = ?[0m  [["data", "---\n- יוני\n- גל\n- חג\n- גד\n- ''\n- ''\n- ''\n- ''\n- גוג\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- רון\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n"], ["updated_at", "2023-11-01 21:08:58.452829"], ["id", 1]]
+  ↳ app/controllers/weekly_plans_controller.rb:22:in `block in update'
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/weekly_plans_controller.rb:22:in `block in update'
+Redirected to http://localhost:3000/weekly_plans/1
+Completed 302 Found in 8ms (ActiveRecord: 1.1ms | Allocations: 4976)
+
+
+Started GET "/weekly_plans/1" for ::1 at 2023-11-01 23:08:58 +0200
+Processing by WeeklyPlansController#show as TURBO_STREAM
+  Parameters: {"id"=>"1"}
+  [1m[36mWeeklyPlan Load (0.1ms)[0m  [1m[34mSELECT "weekly_plans".* FROM "weekly_plans" WHERE "weekly_plans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/weekly_plans_controller.rb:41:in `set_weekly_plan'
+  Rendering layout layouts/application.html.erb
+  Rendering weekly_plans/show.html.erb within layouts/application
+  Rendered weekly_plans/_shift.html.erb (Duration: 0.3ms | Allocations: 393)
+  Rendered weekly_plans/_shift.html.erb (Duration: 0.1ms | Allocations: 180)
+  Rendered weekly_plans/_weekly_plan.html.erb (Duration: 0.9ms | Allocations: 1159)
+  Rendered weekly_plans/show.html.erb within layouts/application (Duration: 1.5ms | Allocations: 2316)
+  Rendered layout layouts/application.html.erb (Duration: 4.6ms | Allocations: 4500)
+Completed 200 OK in 6ms (Views: 5.0ms | ActiveRecord: 0.1ms | Allocations: 5250)
+
+
+Started GET "/weekly_plans/1" for ::1 at 2023-11-01 23:09:00 +0200
+Processing by WeeklyPlansController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mWeeklyPlan Load (0.5ms)[0m  [1m[34mSELECT "weekly_plans".* FROM "weekly_plans" WHERE "weekly_plans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/weekly_plans_controller.rb:41:in `set_weekly_plan'
+  Rendering layout layouts/application.html.erb
+  Rendering weekly_plans/show.html.erb within layouts/application
+  Rendered weekly_plans/_shift.html.erb (Duration: 1.1ms | Allocations: 393)
+  Rendered weekly_plans/_shift.html.erb (Duration: 0.1ms | Allocations: 180)
+  Rendered weekly_plans/_weekly_plan.html.erb (Duration: 3.6ms | Allocations: 1159)
+  Rendered weekly_plans/show.html.erb within layouts/application (Duration: 7.8ms | Allocations: 2283)
+  Rendered layout layouts/application.html.erb (Duration: 13.0ms | Allocations: 4467)
+Completed 200 OK in 17ms (Views: 13.5ms | ActiveRecord: 0.5ms | Allocations: 5213)
+
+
+Started PATCH "/weekly_plans/1" for ::1 at 2023-11-01 23:09:03 +0200
+Processing by WeeklyPlansController#update as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "weekly_plan"=>{"data"=>["יוני", "גל", "חג", "גד", "", "", "", "", "גוג", "", "", "", "", "", "", "", "", "רון", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "רוג", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", ""]}, "commit"=>"עדכן תוכנית", "id"=>"1"}
+  [1m[36mWeeklyPlan Load (0.1ms)[0m  [1m[34mSELECT "weekly_plans".* FROM "weekly_plans" WHERE "weekly_plans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/weekly_plans_controller.rb:41:in `set_weekly_plan'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/weekly_plans_controller.rb:22:in `block in update'
+  [1m[36mWeeklyPlan Update (0.2ms)[0m  [1m[33mUPDATE "weekly_plans" SET "data" = ?, "updated_at" = ? WHERE "weekly_plans"."id" = ?[0m  [["data", "---\n- יוני\n- גל\n- חג\n- גד\n- ''\n- ''\n- ''\n- ''\n- גוג\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- רון\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- רוג\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n"], ["updated_at", "2023-11-01 21:09:03.737667"], ["id", 1]]
+  ↳ app/controllers/weekly_plans_controller.rb:22:in `block in update'
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/weekly_plans_controller.rb:22:in `block in update'
+Redirected to http://localhost:3000/weekly_plans/1
+Completed 302 Found in 6ms (ActiveRecord: 1.1ms | Allocations: 4965)
+
+
+Started GET "/weekly_plans/1" for ::1 at 2023-11-01 23:09:03 +0200
+Processing by WeeklyPlansController#show as TURBO_STREAM
+  Parameters: {"id"=>"1"}
+  [1m[36mWeeklyPlan Load (0.1ms)[0m  [1m[34mSELECT "weekly_plans".* FROM "weekly_plans" WHERE "weekly_plans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/weekly_plans_controller.rb:41:in `set_weekly_plan'
+  Rendering layout layouts/application.html.erb
+  Rendering weekly_plans/show.html.erb within layouts/application
+  Rendered weekly_plans/_shift.html.erb (Duration: 0.5ms | Allocations: 393)
+  Rendered weekly_plans/_shift.html.erb (Duration: 0.2ms | Allocations: 180)
+  Rendered weekly_plans/_weekly_plan.html.erb (Duration: 1.6ms | Allocations: 1159)
+  Rendered weekly_plans/show.html.erb within layouts/application (Duration: 2.6ms | Allocations: 2310)
+  Rendered layout layouts/application.html.erb (Duration: 5.3ms | Allocations: 4494)
+Completed 200 OK in 7ms (Views: 5.7ms | ActiveRecord: 0.1ms | Allocations: 5244)
+
+
+Started GET "/weekly_plans/1" for ::1 at 2023-11-01 23:09:31 +0200
+Processing by WeeklyPlansController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mWeeklyPlan Load (0.1ms)[0m  [1m[34mSELECT "weekly_plans".* FROM "weekly_plans" WHERE "weekly_plans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/weekly_plans_controller.rb:41:in `set_weekly_plan'
+  Rendering layout layouts/application.html.erb
+  Rendering weekly_plans/show.html.erb within layouts/application
+  Rendered weekly_plans/_shift.html.erb (Duration: 1.1ms | Allocations: 907)
+  Rendered weekly_plans/_shift.html.erb (Duration: 0.1ms | Allocations: 252)
+  Rendered weekly_plans/_weekly_plan.html.erb (Duration: 8.2ms | Allocations: 2230)
+  Rendered weekly_plans/show.html.erb within layouts/application (Duration: 9.7ms | Allocations: 3668)
+  Rendered layout layouts/application.html.erb (Duration: 13.6ms | Allocations: 6268)
+Completed 200 OK in 16ms (Views: 14.8ms | ActiveRecord: 0.1ms | Allocations: 7703)
+
+
+Started GET "/weekly_plans/1" for ::1 at 2023-11-01 23:09:48 +0200
+Processing by WeeklyPlansController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mWeeklyPlan Load (0.2ms)[0m  [1m[34mSELECT "weekly_plans".* FROM "weekly_plans" WHERE "weekly_plans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/weekly_plans_controller.rb:41:in `set_weekly_plan'
+  Rendering layout layouts/application.html.erb
+  Rendering weekly_plans/show.html.erb within layouts/application
+  Rendered weekly_plans/_shift.html.erb (Duration: 1.0ms | Allocations: 906)
+  Rendered weekly_plans/_shift.html.erb (Duration: 0.1ms | Allocations: 287)
+  Rendered weekly_plans/_weekly_plan.html.erb (Duration: 2.9ms | Allocations: 2264)
+  Rendered weekly_plans/show.html.erb within layouts/application (Duration: 4.2ms | Allocations: 3706)
+  Rendered layout layouts/application.html.erb (Duration: 7.1ms | Allocations: 6306)
+Completed 200 OK in 11ms (Views: 8.5ms | ActiveRecord: 0.2ms | Allocations: 7798)
+
+
+Started GET "/weekly_plans/1" for ::1 at 2023-11-01 23:09:55 +0200
+Processing by WeeklyPlansController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mWeeklyPlan Load (0.1ms)[0m  [1m[34mSELECT "weekly_plans".* FROM "weekly_plans" WHERE "weekly_plans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/weekly_plans_controller.rb:41:in `set_weekly_plan'
+  Rendering layout layouts/application.html.erb
+  Rendering weekly_plans/show.html.erb within layouts/application
+  Rendered weekly_plans/_shift.html.erb (Duration: 1.1ms | Allocations: 906)
+  Rendered weekly_plans/_shift.html.erb (Duration: 0.1ms | Allocations: 288)
+  Rendered weekly_plans/_weekly_plan.html.erb (Duration: 2.6ms | Allocations: 2265)
+  Rendered weekly_plans/show.html.erb within layouts/application (Duration: 3.7ms | Allocations: 3704)
+  Rendered layout layouts/application.html.erb (Duration: 6.2ms | Allocations: 6304)
+Completed 200 OK in 10ms (Views: 7.2ms | ActiveRecord: 0.1ms | Allocations: 7796)
+
+
+Started PATCH "/weekly_plans/1" for ::1 at 2023-11-01 23:10:01 +0200
+Processing by WeeklyPlansController#update as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "weekly_plan"=>{"data"=>["יוני", "גל", "חג", "גד", "", "", "", "", "גוג", "", "", "", "", "", "", "", "", "רון", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "ויקי", "", "רוג", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", ""]}, "commit"=>"עדכן תוכנית", "id"=>"1"}
+  [1m[36mWeeklyPlan Load (0.2ms)[0m  [1m[34mSELECT "weekly_plans".* FROM "weekly_plans" WHERE "weekly_plans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/weekly_plans_controller.rb:41:in `set_weekly_plan'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/weekly_plans_controller.rb:22:in `block in update'
+  [1m[36mWeeklyPlan Update (0.3ms)[0m  [1m[33mUPDATE "weekly_plans" SET "data" = ?, "updated_at" = ? WHERE "weekly_plans"."id" = ?[0m  [["data", "---\n- יוני\n- גל\n- חג\n- גד\n- ''\n- ''\n- ''\n- ''\n- גוג\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- רון\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ויקי\n- ''\n- רוג\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n"], ["updated_at", "2023-11-01 21:10:01.857086"], ["id", 1]]
+  ↳ app/controllers/weekly_plans_controller.rb:22:in `block in update'
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/weekly_plans_controller.rb:22:in `block in update'
+Redirected to http://localhost:3000/weekly_plans/1
+Completed 302 Found in 8ms (ActiveRecord: 1.1ms | Allocations: 5193)
+
+
+Started GET "/weekly_plans/1" for ::1 at 2023-11-01 23:10:01 +0200
+Processing by WeeklyPlansController#show as TURBO_STREAM
+  Parameters: {"id"=>"1"}
+  [1m[36mWeeklyPlan Load (0.1ms)[0m  [1m[34mSELECT "weekly_plans".* FROM "weekly_plans" WHERE "weekly_plans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/weekly_plans_controller.rb:41:in `set_weekly_plan'
+  Rendering layout layouts/application.html.erb
+  Rendering weekly_plans/show.html.erb within layouts/application
+  Rendered weekly_plans/_shift.html.erb (Duration: 0.3ms | Allocations: 465)
+  Rendered weekly_plans/_shift.html.erb (Duration: 0.1ms | Allocations: 288)
+  Rendered weekly_plans/_weekly_plan.html.erb (Duration: 0.9ms | Allocations: 1339)
+  Rendered weekly_plans/show.html.erb within layouts/application (Duration: 1.3ms | Allocations: 2561)
+  Rendered layout layouts/application.html.erb (Duration: 3.9ms | Allocations: 4751)
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.1ms | Allocations: 5558)
+
+
+Started PATCH "/weekly_plans/1" for ::1 at 2023-11-01 23:10:10 +0200
+Processing by WeeklyPlansController#update as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "weekly_plan"=>{"data"=>["יוני", "גל", "חג", "גד", "", "", "", "תום", "גוג", "", "", "", "", "", "", "", "", "רון", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "ויקי", "", "רוג", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", ""]}, "commit"=>"עדכן תוכנית", "id"=>"1"}
+  [1m[36mWeeklyPlan Load (0.1ms)[0m  [1m[34mSELECT "weekly_plans".* FROM "weekly_plans" WHERE "weekly_plans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/weekly_plans_controller.rb:41:in `set_weekly_plan'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/weekly_plans_controller.rb:22:in `block in update'
+  [1m[36mWeeklyPlan Update (0.2ms)[0m  [1m[33mUPDATE "weekly_plans" SET "data" = ?, "updated_at" = ? WHERE "weekly_plans"."id" = ?[0m  [["data", "---\n- יוני\n- גל\n- חג\n- גד\n- ''\n- ''\n- ''\n- תום\n- גוג\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- רון\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ויקי\n- ''\n- רוג\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n"], ["updated_at", "2023-11-01 21:10:10.451116"], ["id", 1]]
+  ↳ app/controllers/weekly_plans_controller.rb:22:in `block in update'
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/weekly_plans_controller.rb:22:in `block in update'
+Redirected to http://localhost:3000/weekly_plans/1
+Completed 302 Found in 5ms (ActiveRecord: 1.0ms | Allocations: 4988)
+
+
+Started GET "/weekly_plans/1" for ::1 at 2023-11-01 23:10:10 +0200
+Processing by WeeklyPlansController#show as TURBO_STREAM
+  Parameters: {"id"=>"1"}
+  [1m[36mWeeklyPlan Load (0.1ms)[0m  [1m[34mSELECT "weekly_plans".* FROM "weekly_plans" WHERE "weekly_plans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/weekly_plans_controller.rb:41:in `set_weekly_plan'
+  Rendering layout layouts/application.html.erb
+  Rendering weekly_plans/show.html.erb within layouts/application
+  Rendered weekly_plans/_shift.html.erb (Duration: 0.5ms | Allocations: 465)
+  Rendered weekly_plans/_shift.html.erb (Duration: 0.2ms | Allocations: 288)
+  Rendered weekly_plans/_weekly_plan.html.erb (Duration: 1.4ms | Allocations: 1339)
+  Rendered weekly_plans/show.html.erb within layouts/application (Duration: 2.0ms | Allocations: 2479)
+  Rendered layout layouts/application.html.erb (Duration: 7.9ms | Allocations: 4678)
+Completed 200 OK in 10ms (Views: 8.3ms | ActiveRecord: 0.1ms | Allocations: 5429)
+
+
+Started GET "/weekly_plans/1" for ::1 at 2023-11-01 23:10:12 +0200
+Processing by WeeklyPlansController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mWeeklyPlan Load (0.1ms)[0m  [1m[34mSELECT "weekly_plans".* FROM "weekly_plans" WHERE "weekly_plans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/weekly_plans_controller.rb:41:in `set_weekly_plan'
+  Rendering layout layouts/application.html.erb
+  Rendering weekly_plans/show.html.erb within layouts/application
+  Rendered weekly_plans/_shift.html.erb (Duration: 0.8ms | Allocations: 465)
+  Rendered weekly_plans/_shift.html.erb (Duration: 0.4ms | Allocations: 288)
+  Rendered weekly_plans/_weekly_plan.html.erb (Duration: 2.7ms | Allocations: 1339)
+  Rendered weekly_plans/show.html.erb within layouts/application (Duration: 3.9ms | Allocations: 2460)
+  Rendered layout layouts/application.html.erb (Duration: 7.4ms | Allocations: 4659)
+Completed 200 OK in 10ms (Views: 7.9ms | ActiveRecord: 0.1ms | Allocations: 5404)
+
+
+Started GET "/weekly_plans/1" for ::1 at 2023-11-01 23:10:20 +0200
+Processing by WeeklyPlansController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mWeeklyPlan Load (0.1ms)[0m  [1m[34mSELECT "weekly_plans".* FROM "weekly_plans" WHERE "weekly_plans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/weekly_plans_controller.rb:41:in `set_weekly_plan'
+  Rendering layout layouts/application.html.erb
+  Rendering weekly_plans/show.html.erb within layouts/application
+  Rendered weekly_plans/_shift.html.erb (Duration: 1.3ms | Allocations: 819)
+  Rendered weekly_plans/_shift.html.erb (Duration: 0.1ms | Allocations: 216)
+  Rendered weekly_plans/_weekly_plan.html.erb (Duration: 3.8ms | Allocations: 2106)
+  Rendered weekly_plans/show.html.erb within layouts/application (Duration: 6.6ms | Allocations: 3553)
+  Rendered layout layouts/application.html.erb (Duration: 10.7ms | Allocations: 6153)
+Completed 200 OK in 14ms (Views: 12.1ms | ActiveRecord: 0.1ms | Allocations: 7570)
+
+
+Started PATCH "/weekly_plans/1" for ::1 at 2023-11-01 23:10:24 +0200
+Processing by WeeklyPlansController#update as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "weekly_plan"=>{"data"=>["יוני", "גל", "חג", "גד", "", "", "", "תום", "גוג", "", "", "", "", "", "", "", "", "רון", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "ויקי", "", "רוג", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "נוב", "", "", "", "", "", "", "", "", "", "", "", "", "", "", ""]}, "commit"=>"עדכן תוכנית", "id"=>"1"}
+  [1m[36mWeeklyPlan Load (0.1ms)[0m  [1m[34mSELECT "weekly_plans".* FROM "weekly_plans" WHERE "weekly_plans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/weekly_plans_controller.rb:41:in `set_weekly_plan'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/weekly_plans_controller.rb:22:in `block in update'
+  [1m[36mWeeklyPlan Update (0.5ms)[0m  [1m[33mUPDATE "weekly_plans" SET "data" = ?, "updated_at" = ? WHERE "weekly_plans"."id" = ?[0m  [["data", "---\n- יוני\n- גל\n- חג\n- גד\n- ''\n- ''\n- ''\n- תום\n- גוג\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- רון\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ויקי\n- ''\n- רוג\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- נוב\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n"], ["updated_at", "2023-11-01 21:10:24.216231"], ["id", 1]]
+  ↳ app/controllers/weekly_plans_controller.rb:22:in `block in update'
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/weekly_plans_controller.rb:22:in `block in update'
+Redirected to http://localhost:3000/weekly_plans/1
+Completed 302 Found in 9ms (ActiveRecord: 1.5ms | Allocations: 5213)
+
+
+Started GET "/weekly_plans/1" for ::1 at 2023-11-01 23:10:24 +0200
+Processing by WeeklyPlansController#show as TURBO_STREAM
+  Parameters: {"id"=>"1"}
+  [1m[36mWeeklyPlan Load (0.1ms)[0m  [1m[34mSELECT "weekly_plans".* FROM "weekly_plans" WHERE "weekly_plans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/weekly_plans_controller.rb:41:in `set_weekly_plan'
+  Rendering layout layouts/application.html.erb
+  Rendering weekly_plans/show.html.erb within layouts/application
+  Rendered weekly_plans/_shift.html.erb (Duration: 0.3ms | Allocations: 393)
+  Rendered weekly_plans/_shift.html.erb (Duration: 0.1ms | Allocations: 216)
+  Rendered weekly_plans/_weekly_plan.html.erb (Duration: 0.9ms | Allocations: 1195)
+  Rendered weekly_plans/show.html.erb within layouts/application (Duration: 1.3ms | Allocations: 2406)
+  Rendered layout layouts/application.html.erb (Duration: 6.3ms | Allocations: 4590)
+Completed 200 OK in 7ms (Views: 6.5ms | ActiveRecord: 0.1ms | Allocations: 5397)
+
+
+Started PATCH "/weekly_plans/1" for ::1 at 2023-11-01 23:10:27 +0200
+Processing by WeeklyPlansController#update as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "weekly_plan"=>{"data"=>["יוני", "גל", "חג", "גד", "", "", "", "תום", "גוג", "", "", "", "", "", "", "", "", "רון", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "ויקי", "", "רוג", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "נוב", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "גם"]}, "commit"=>"עדכן תוכנית", "id"=>"1"}
+  [1m[36mWeeklyPlan Load (0.1ms)[0m  [1m[34mSELECT "weekly_plans".* FROM "weekly_plans" WHERE "weekly_plans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/weekly_plans_controller.rb:41:in `set_weekly_plan'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/weekly_plans_controller.rb:22:in `block in update'
+  [1m[36mWeeklyPlan Update (0.3ms)[0m  [1m[33mUPDATE "weekly_plans" SET "data" = ?, "updated_at" = ? WHERE "weekly_plans"."id" = ?[0m  [["data", "---\n- יוני\n- גל\n- חג\n- גד\n- ''\n- ''\n- ''\n- תום\n- גוג\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- רון\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ויקי\n- ''\n- רוג\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- נוב\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- גם\n"], ["updated_at", "2023-11-01 21:10:27.674249"], ["id", 1]]
+  ↳ app/controllers/weekly_plans_controller.rb:22:in `block in update'
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/weekly_plans_controller.rb:22:in `block in update'
+Redirected to http://localhost:3000/weekly_plans/1
+Completed 302 Found in 8ms (ActiveRecord: 1.3ms | Allocations: 4995)
+
+
+Started GET "/weekly_plans/1" for ::1 at 2023-11-01 23:10:27 +0200
+Processing by WeeklyPlansController#show as TURBO_STREAM
+  Parameters: {"id"=>"1"}
+  [1m[36mWeeklyPlan Load (0.1ms)[0m  [1m[34mSELECT "weekly_plans".* FROM "weekly_plans" WHERE "weekly_plans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/weekly_plans_controller.rb:41:in `set_weekly_plan'
+  Rendering layout layouts/application.html.erb
+  Rendering weekly_plans/show.html.erb within layouts/application
+  Rendered weekly_plans/_shift.html.erb (Duration: 0.5ms | Allocations: 393)
+  Rendered weekly_plans/_shift.html.erb (Duration: 0.2ms | Allocations: 216)
+  Rendered weekly_plans/_weekly_plan.html.erb (Duration: 1.6ms | Allocations: 1195)
+  Rendered weekly_plans/show.html.erb within layouts/application (Duration: 2.6ms | Allocations: 2376)
+  Rendered layout layouts/application.html.erb (Duration: 5.8ms | Allocations: 4560)
+Completed 200 OK in 8ms (Views: 6.2ms | ActiveRecord: 0.1ms | Allocations: 5310)
+
+
+Started PATCH "/weekly_plans/1" for ::1 at 2023-11-01 23:10:31 +0200
+Processing by WeeklyPlansController#update as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "weekly_plan"=>{"data"=>["יוני", "גל", "חג", "גד", "", "", "", "תום", "גוג", "", "", "", "", "", "", "", "", "רון", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "סוק", "ויקי", "", "רוג", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "נוב", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "גם"]}, "commit"=>"עדכן תוכנית", "id"=>"1"}
+  [1m[36mWeeklyPlan Load (0.2ms)[0m  [1m[34mSELECT "weekly_plans".* FROM "weekly_plans" WHERE "weekly_plans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/weekly_plans_controller.rb:41:in `set_weekly_plan'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/weekly_plans_controller.rb:22:in `block in update'
+  [1m[36mWeeklyPlan Update (0.3ms)[0m  [1m[33mUPDATE "weekly_plans" SET "data" = ?, "updated_at" = ? WHERE "weekly_plans"."id" = ?[0m  [["data", "---\n- יוני\n- גל\n- חג\n- גד\n- ''\n- ''\n- ''\n- תום\n- גוג\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- רון\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- סוק\n- ויקי\n- ''\n- רוג\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- נוב\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- גם\n"], ["updated_at", "2023-11-01 21:10:31.386893"], ["id", 1]]
+  ↳ app/controllers/weekly_plans_controller.rb:22:in `block in update'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/weekly_plans_controller.rb:22:in `block in update'
+Redirected to http://localhost:3000/weekly_plans/1
+Completed 302 Found in 12ms (ActiveRecord: 1.6ms | Allocations: 4987)
+
+
+Started GET "/weekly_plans/1" for ::1 at 2023-11-01 23:10:31 +0200
+Processing by WeeklyPlansController#show as TURBO_STREAM
+  Parameters: {"id"=>"1"}
+  [1m[36mWeeklyPlan Load (0.1ms)[0m  [1m[34mSELECT "weekly_plans".* FROM "weekly_plans" WHERE "weekly_plans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/weekly_plans_controller.rb:41:in `set_weekly_plan'
+  Rendering layout layouts/application.html.erb
+  Rendering weekly_plans/show.html.erb within layouts/application
+  Rendered weekly_plans/_shift.html.erb (Duration: 0.2ms | Allocations: 393)
+  Rendered weekly_plans/_shift.html.erb (Duration: 0.1ms | Allocations: 216)
+  Rendered weekly_plans/_weekly_plan.html.erb (Duration: 0.8ms | Allocations: 1195)
+  Rendered weekly_plans/show.html.erb within layouts/application (Duration: 1.2ms | Allocations: 2343)
+  Rendered layout layouts/application.html.erb (Duration: 3.2ms | Allocations: 4527)
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.1ms | Allocations: 5277)
+
+
+Started PATCH "/weekly_plans/1" for ::1 at 2023-11-01 23:10:34 +0200
+Processing by WeeklyPlansController#update as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "weekly_plan"=>{"data"=>["יוני", "גל", "חג", "גד", "", "", "", "תום", "גוג", "", "", "", "", "", "", "נוק", "", "רון", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "סוק", "ויקי", "", "רוג", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "נוב", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "גם"]}, "commit"=>"עדכן תוכנית", "id"=>"1"}
+  [1m[36mWeeklyPlan Load (0.1ms)[0m  [1m[34mSELECT "weekly_plans".* FROM "weekly_plans" WHERE "weekly_plans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/weekly_plans_controller.rb:41:in `set_weekly_plan'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/weekly_plans_controller.rb:22:in `block in update'
+  [1m[36mWeeklyPlan Update (0.3ms)[0m  [1m[33mUPDATE "weekly_plans" SET "data" = ?, "updated_at" = ? WHERE "weekly_plans"."id" = ?[0m  [["data", "---\n- יוני\n- גל\n- חג\n- גד\n- ''\n- ''\n- ''\n- תום\n- גוג\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- נוק\n- ''\n- רון\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- סוק\n- ויקי\n- ''\n- רוג\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- נוב\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- גם\n"], ["updated_at", "2023-11-01 21:10:34.503811"], ["id", 1]]
+  ↳ app/controllers/weekly_plans_controller.rb:22:in `block in update'
+  [1m[36mTRANSACTION (14.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/weekly_plans_controller.rb:22:in `block in update'
+Redirected to http://localhost:3000/weekly_plans/1
+Completed 302 Found in 19ms (ActiveRecord: 15.1ms | Allocations: 4969)
+
+
+Started GET "/weekly_plans/1" for ::1 at 2023-11-01 23:10:34 +0200
+Processing by WeeklyPlansController#show as TURBO_STREAM
+  Parameters: {"id"=>"1"}
+  [1m[36mWeeklyPlan Load (0.1ms)[0m  [1m[34mSELECT "weekly_plans".* FROM "weekly_plans" WHERE "weekly_plans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/weekly_plans_controller.rb:41:in `set_weekly_plan'
+  Rendering layout layouts/application.html.erb
+  Rendering weekly_plans/show.html.erb within layouts/application
+  Rendered weekly_plans/_shift.html.erb (Duration: 0.3ms | Allocations: 393)
+  Rendered weekly_plans/_shift.html.erb (Duration: 0.1ms | Allocations: 216)
+  Rendered weekly_plans/_weekly_plan.html.erb (Duration: 0.9ms | Allocations: 1195)
+  Rendered weekly_plans/show.html.erb within layouts/application (Duration: 1.3ms | Allocations: 2373)
+  Rendered layout layouts/application.html.erb (Duration: 6.7ms | Allocations: 4557)
+Completed 200 OK in 8ms (Views: 6.9ms | ActiveRecord: 0.1ms | Allocations: 5307)
+
+
+Started PATCH "/weekly_plans/1" for ::1 at 2023-11-01 23:10:39 +0200
+Processing by WeeklyPlansController#update as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "weekly_plan"=>{"data"=>["יוני", "גל", "חג", "גד", "", "", "", "תום", "גוג", "", "", "", "", "", "", "נוק", "", "רון", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "סוק", "ויקי", "", "רוג", "", "", "", "", "", "", "", "", "", "", "", "", "גרו׳", "", "", "", "", "נוב", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "גם"]}, "commit"=>"עדכן תוכנית", "id"=>"1"}
+  [1m[36mWeeklyPlan Load (0.1ms)[0m  [1m[34mSELECT "weekly_plans".* FROM "weekly_plans" WHERE "weekly_plans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/weekly_plans_controller.rb:41:in `set_weekly_plan'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/weekly_plans_controller.rb:22:in `block in update'
+  [1m[36mWeeklyPlan Update (0.3ms)[0m  [1m[33mUPDATE "weekly_plans" SET "data" = ?, "updated_at" = ? WHERE "weekly_plans"."id" = ?[0m  [["data", "---\n- יוני\n- גל\n- חג\n- גד\n- ''\n- ''\n- ''\n- תום\n- גוג\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- נוק\n- ''\n- רון\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- סוק\n- ויקי\n- ''\n- רוג\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- גרו׳\n- ''\n- ''\n- ''\n- ''\n- נוב\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- ''\n- גם\n"], ["updated_at", "2023-11-01 21:10:39.681246"], ["id", 1]]
+  ↳ app/controllers/weekly_plans_controller.rb:22:in `block in update'
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/weekly_plans_controller.rb:22:in `block in update'
+Redirected to http://localhost:3000/weekly_plans/1
+Completed 302 Found in 9ms (ActiveRecord: 1.1ms | Allocations: 4951)
+
+
+Started GET "/weekly_plans/1" for ::1 at 2023-11-01 23:10:39 +0200
+Processing by WeeklyPlansController#show as TURBO_STREAM
+  Parameters: {"id"=>"1"}
+  [1m[36mWeeklyPlan Load (0.1ms)[0m  [1m[34mSELECT "weekly_plans".* FROM "weekly_plans" WHERE "weekly_plans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/weekly_plans_controller.rb:41:in `set_weekly_plan'
+  Rendering layout layouts/application.html.erb
+  Rendering weekly_plans/show.html.erb within layouts/application
+  Rendered weekly_plans/_shift.html.erb (Duration: 0.5ms | Allocations: 393)
+  Rendered weekly_plans/_shift.html.erb (Duration: 0.3ms | Allocations: 216)
+  Rendered weekly_plans/_weekly_plan.html.erb (Duration: 1.7ms | Allocations: 1195)
+  Rendered weekly_plans/show.html.erb within layouts/application (Duration: 2.5ms | Allocations: 2355)
+  Rendered layout layouts/application.html.erb (Duration: 7.4ms | Allocations: 4547)
+Completed 200 OK in 10ms (Views: 7.8ms | ActiveRecord: 0.1ms | Allocations: 5298)
+
+
+Started GET "/weekly_plans/1" for ::1 at 2023-11-01 23:10:41 +0200
+Processing by WeeklyPlansController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mWeeklyPlan Load (0.1ms)[0m  [1m[34mSELECT "weekly_plans".* FROM "weekly_plans" WHERE "weekly_plans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/weekly_plans_controller.rb:41:in `set_weekly_plan'
+  Rendering layout layouts/application.html.erb
+  Rendering weekly_plans/show.html.erb within layouts/application
+  Rendered weekly_plans/_shift.html.erb (Duration: 0.3ms | Allocations: 393)
+  Rendered weekly_plans/_shift.html.erb (Duration: 0.1ms | Allocations: 216)
+  Rendered weekly_plans/_weekly_plan.html.erb (Duration: 1.2ms | Allocations: 1195)
+  Rendered weekly_plans/show.html.erb within layouts/application (Duration: 1.9ms | Allocations: 2343)
+  Rendered layout layouts/application.html.erb (Duration: 6.6ms | Allocations: 4533)
+Completed 200 OK in 9ms (Views: 7.1ms | ActiveRecord: 0.1ms | Allocations: 5279)
+
+
+Started GET "/weekly_plans/1" for ::1 at 2023-11-01 23:10:41 +0200
+Processing by WeeklyPlansController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mWeeklyPlan Load (0.1ms)[0m  [1m[34mSELECT "weekly_plans".* FROM "weekly_plans" WHERE "weekly_plans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/weekly_plans_controller.rb:41:in `set_weekly_plan'
+  Rendering layout layouts/application.html.erb
+  Rendering weekly_plans/show.html.erb within layouts/application
+  Rendered weekly_plans/_shift.html.erb (Duration: 0.6ms | Allocations: 393)
+  Rendered weekly_plans/_shift.html.erb (Duration: 0.2ms | Allocations: 216)
+  Rendered weekly_plans/_weekly_plan.html.erb (Duration: 1.9ms | Allocations: 1195)
+  Rendered weekly_plans/show.html.erb within layouts/application (Duration: 3.1ms | Allocations: 2340)
+  Rendered layout layouts/application.html.erb (Duration: 12.2ms | Allocations: 4539)
+Completed 200 OK in 15ms (Views: 12.7ms | ActiveRecord: 0.1ms | Allocations: 5285)
+
+
+Started GET "/weekly_plans/1" for ::1 at 2023-11-01 23:10:42 +0200
+Processing by WeeklyPlansController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mWeeklyPlan Load (0.1ms)[0m  [1m[34mSELECT "weekly_plans".* FROM "weekly_plans" WHERE "weekly_plans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/weekly_plans_controller.rb:41:in `set_weekly_plan'
+  Rendering layout layouts/application.html.erb
+  Rendering weekly_plans/show.html.erb within layouts/application
+  Rendered weekly_plans/_shift.html.erb (Duration: 0.3ms | Allocations: 393)
+  Rendered weekly_plans/_shift.html.erb (Duration: 0.1ms | Allocations: 216)
+  Rendered weekly_plans/_weekly_plan.html.erb (Duration: 1.0ms | Allocations: 1195)
+  Rendered weekly_plans/show.html.erb within layouts/application (Duration: 1.7ms | Allocations: 2331)
+  Rendered layout layouts/application.html.erb (Duration: 3.9ms | Allocations: 4529)
+Completed 200 OK in 7ms (Views: 4.8ms | ActiveRecord: 0.1ms | Allocations: 5274)
+
+
+Started GET "/weekly_plans/1" for ::1 at 2023-11-01 23:10:42 +0200
+Processing by WeeklyPlansController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mWeeklyPlan Load (0.9ms)[0m  [1m[34mSELECT "weekly_plans".* FROM "weekly_plans" WHERE "weekly_plans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/weekly_plans_controller.rb:41:in `set_weekly_plan'
+  Rendering layout layouts/application.html.erb
+  Rendering weekly_plans/show.html.erb within layouts/application
+  Rendered weekly_plans/_shift.html.erb (Duration: 0.3ms | Allocations: 393)
+  Rendered weekly_plans/_shift.html.erb (Duration: 0.1ms | Allocations: 216)
+  Rendered weekly_plans/_weekly_plan.html.erb (Duration: 1.1ms | Allocations: 1195)
+  Rendered weekly_plans/show.html.erb within layouts/application (Duration: 3.1ms | Allocations: 2325)
+  Rendered layout layouts/application.html.erb (Duration: 16.7ms | Allocations: 4509)
+Completed 200 OK in 21ms (Views: 17.7ms | ActiveRecord: 0.9ms | Allocations: 5254)
+
+
+Started GET "/weekly_plans/1" for ::1 at 2023-11-01 23:10:59 +0200
+Processing by WeeklyPlansController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mWeeklyPlan Load (0.1ms)[0m  [1m[34mSELECT "weekly_plans".* FROM "weekly_plans" WHERE "weekly_plans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/weekly_plans_controller.rb:41:in `set_weekly_plan'
+  Rendering layout layouts/application.html.erb
+  Rendering weekly_plans/show.html.erb within layouts/application
+  Rendered weekly_plans/_shift.html.erb (Duration: 1.0ms | Allocations: 819)
+  Rendered weekly_plans/_shift.html.erb (Duration: 0.1ms | Allocations: 216)
+  Rendered weekly_plans/_weekly_plan.html.erb (Duration: 2.3ms | Allocations: 2108)
+  Rendered weekly_plans/show.html.erb within layouts/application (Duration: 3.6ms | Allocations: 3546)
+  Rendered layout layouts/application.html.erb (Duration: 9.6ms | Allocations: 6146)
+Completed 200 OK in 13ms (Views: 10.7ms | ActiveRecord: 0.1ms | Allocations: 7563)
+
+
+Started GET "/weekly_plans/1" for ::1 at 2023-11-01 23:11:11 +0200
+Processing by WeeklyPlansController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mWeeklyPlan Load (0.1ms)[0m  [1m[34mSELECT "weekly_plans".* FROM "weekly_plans" WHERE "weekly_plans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/weekly_plans_controller.rb:41:in `set_weekly_plan'
+  Rendering layout layouts/application.html.erb
+  Rendering weekly_plans/show.html.erb within layouts/application
+  Rendered weekly_plans/_shift.html.erb (Duration: 0.7ms | Allocations: 818)
+  Rendered weekly_plans/_shift.html.erb (Duration: 0.1ms | Allocations: 216)
+  Rendered weekly_plans/_weekly_plan.html.erb (Duration: 2.2ms | Allocations: 2111)
+  Rendered weekly_plans/show.html.erb within layouts/application (Duration: 7.0ms | Allocations: 3529)
+  Rendered layout layouts/application.html.erb (Duration: 10.3ms | Allocations: 6129)
+Completed 200 OK in 17ms (Views: 13.3ms | ActiveRecord: 0.1ms | Allocations: 7621)
+
+
+Started GET "/weekly_plans/1" for ::1 at 2023-11-01 23:11:25 +0200
+Processing by WeeklyPlansController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mWeeklyPlan Load (0.4ms)[0m  [1m[34mSELECT "weekly_plans".* FROM "weekly_plans" WHERE "weekly_plans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/weekly_plans_controller.rb:41:in `set_weekly_plan'
+  Rendering layout layouts/application.html.erb
+  Rendering weekly_plans/show.html.erb within layouts/application
+  Rendered weekly_plans/_shift.html.erb (Duration: 0.8ms | Allocations: 818)
+  Rendered weekly_plans/_shift.html.erb (Duration: 0.1ms | Allocations: 216)
+  Rendered weekly_plans/_weekly_plan.html.erb (Duration: 2.7ms | Allocations: 2116)
+  Rendered weekly_plans/show.html.erb within layouts/application (Duration: 6.4ms | Allocations: 3561)
+  Rendered layout layouts/application.html.erb (Duration: 8.6ms | Allocations: 6161)
+Completed 200 OK in 13ms (Views: 9.7ms | ActiveRecord: 0.4ms | Allocations: 7653)
+
+
