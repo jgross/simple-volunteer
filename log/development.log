@@ -4038,3 +4038,630 @@ Processing by WeeklyPlansController#show as HTML
 Completed 200 OK in 13ms (Views: 9.7ms | ActiveRecord: 0.4ms | Allocations: 7653)
 
 
+Started GET "/" for ::1 at 2023-11-02 19:21:12 +0200
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/jonathangross/.rbenv/versions/3.1.3/lib/ruby/gems/3.1.0/gems/railties-7.0.8/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/jonathangross/.rbenv/versions/3.1.3/lib/ruby/gems/3.1.0/gems/railties-7.0.8/lib/rails/templates/rails/welcome/index.html.erb (Duration: 1.8ms | Allocations: 527)
+Completed 200 OK in 30ms (Views: 4.1ms | ActiveRecord: 0.0ms | Allocations: 4487)
+
+
+Started GET "/weekly_plans" for ::1 at 2023-11-02 19:21:16 +0200
+Processing by WeeklyPlansController#index as HTML
+Redirected to http://localhost:3000/weekly_plans/2023-44
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 384)
+
+
+Started GET "/weekly_plans/2023-44" for ::1 at 2023-11-02 19:21:16 +0200
+Processing by WeeklyPlansController#show as HTML
+  Parameters: {"id"=>"2023-44"}
+  [1m[36mWeeklyPlan Load (0.4ms)[0m  [1m[34mSELECT "weekly_plans".* FROM "weekly_plans" WHERE "weekly_plans"."week_number" = ? AND "weekly_plans"."year" = ? ORDER BY "weekly_plans"."id" ASC LIMIT ?[0m  [["week_number", 44], ["year", 2023], ["LIMIT", 1]]
+  ↳ app/controllers/weekly_plans_controller.rb:39:in `set_weekly_plan'
+  Rendering layout layouts/application.html.erb
+  Rendering weekly_plans/show.html.erb within layouts/application
+  Rendered weekly_plans/_shift.html.erb (Duration: 1.9ms | Allocations: 1084)
+  Rendered weekly_plans/_shift.html.erb (Duration: 0.1ms | Allocations: 223)
+  Rendered weekly_plans/_weekly_plan.html.erb (Duration: 4.2ms | Allocations: 2721)
+  Rendered weekly_plans/show.html.erb within layouts/application (Duration: 11.2ms | Allocations: 4756)
+  Rendered layout layouts/application.html.erb (Duration: 55.1ms | Allocations: 39787)
+Completed 200 OK in 72ms (Views: 56.4ms | ActiveRecord: 0.7ms | Allocations: 49087)
+
+
+Started GET "/weekly_plans/2023-44" for ::1 at 2023-11-02 19:21:34 +0200
+Processing by WeeklyPlansController#show as HTML
+  Parameters: {"id"=>"2023-44"}
+  [1m[36mWeeklyPlan Load (0.1ms)[0m  [1m[34mSELECT "weekly_plans".* FROM "weekly_plans" WHERE "weekly_plans"."week_number" = ? AND "weekly_plans"."year" = ? ORDER BY "weekly_plans"."id" ASC LIMIT ?[0m  [["week_number", 44], ["year", 2023], ["LIMIT", 1]]
+  ↳ app/controllers/weekly_plans_controller.rb:39:in `set_weekly_plan'
+  Rendering layout layouts/application.html.erb
+  Rendering weekly_plans/show.html.erb within layouts/application
+  Rendered weekly_plans/_shift.html.erb (Duration: 0.9ms | Allocations: 896)
+  Rendered weekly_plans/_shift.html.erb (Duration: 0.1ms | Allocations: 222)
+  Rendered weekly_plans/_weekly_plan.html.erb (Duration: 3.2ms | Allocations: 2200)
+  Rendered weekly_plans/show.html.erb within layouts/application (Duration: 5.0ms | Allocations: 3795)
+  Rendered layout layouts/application.html.erb (Duration: 8.6ms | Allocations: 6395)
+Completed 200 OK in 12ms (Views: 9.6ms | ActiveRecord: 0.1ms | Allocations: 8126)
+
+
+Started GET "/weekly_plans/2023-44" for ::1 at 2023-11-02 19:21:54 +0200
+Processing by WeeklyPlansController#show as HTML
+  Parameters: {"id"=>"2023-44"}
+  [1m[36mWeeklyPlan Load (0.1ms)[0m  [1m[34mSELECT "weekly_plans".* FROM "weekly_plans" WHERE "weekly_plans"."week_number" = ? AND "weekly_plans"."year" = ? ORDER BY "weekly_plans"."id" ASC LIMIT ?[0m  [["week_number", 44], ["year", 2023], ["LIMIT", 1]]
+  ↳ app/controllers/weekly_plans_controller.rb:39:in `set_weekly_plan'
+  Rendering layout layouts/application.html.erb
+  Rendering weekly_plans/show.html.erb within layouts/application
+  Rendered weekly_plans/_shift.html.erb (Duration: 1.2ms | Allocations: 884)
+  Rendered weekly_plans/_shift.html.erb (Duration: 0.2ms | Allocations: 230)
+  Rendered weekly_plans/_weekly_plan.html.erb (Duration: 5.0ms | Allocations: 2196)
+  Rendered weekly_plans/show.html.erb within layouts/application (Duration: 10.2ms | Allocations: 3785)
+  Rendered layout layouts/application.html.erb (Duration: 14.9ms | Allocations: 6385)
+Completed 200 OK in 19ms (Views: 16.3ms | ActiveRecord: 0.1ms | Allocations: 8113)
+
+
+Started GET "/weekly_plans/2023-44" for ::1 at 2023-11-02 19:22:06 +0200
+Processing by WeeklyPlansController#show as HTML
+  Parameters: {"id"=>"2023-44"}
+  [1m[36mWeeklyPlan Load (0.1ms)[0m  [1m[34mSELECT "weekly_plans".* FROM "weekly_plans" WHERE "weekly_plans"."week_number" = ? AND "weekly_plans"."year" = ? ORDER BY "weekly_plans"."id" ASC LIMIT ?[0m  [["week_number", 44], ["year", 2023], ["LIMIT", 1]]
+  ↳ app/controllers/weekly_plans_controller.rb:39:in `set_weekly_plan'
+  Rendering layout layouts/application.html.erb
+  Rendering weekly_plans/show.html.erb within layouts/application
+  Rendered weekly_plans/_shift.html.erb (Duration: 1.1ms | Allocations: 891)
+  Rendered weekly_plans/_shift.html.erb (Duration: 0.2ms | Allocations: 217)
+  Rendered weekly_plans/_weekly_plan.html.erb (Duration: 3.2ms | Allocations: 2190)
+  Rendered weekly_plans/show.html.erb within layouts/application (Duration: 4.5ms | Allocations: 3788)
+  Rendered layout layouts/application.html.erb (Duration: 9.7ms | Allocations: 6388)
+Completed 200 OK in 13ms (Views: 10.7ms | ActiveRecord: 0.1ms | Allocations: 8116)
+
+
+Started GET "/sessions/expires_at" for ::1 at 2023-11-02 19:22:08 +0200
+Started GET "/cable" for ::1 at 2023-11-02 19:22:08 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/sessions/expires_at"):
+  
+Started GET "/cable" [WebSocket] for ::1 at 2023-11-02 19:22:08 +0200
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Subscription class not found: "CableReady::Stream"
+Subscription class not found: "CableReady::Stream"
+Subscription class not found: "CableReady::Stream"
+Subscription class not found: "CableReady::Stream"
+Subscription class not found: "CableReady::Stream"
+Subscription class not found: "CableReady::Stream"
+Subscription class not found: "CableReady::Stream"
+Subscription class not found: "CableReady::Stream"
+Subscription class not found: "CableReady::Stream"
+Subscription class not found: "CableReady::Stream"
+Started GET "/weekly_plans/2023-44" for ::1 at 2023-11-02 19:22:23 +0200
+Processing by WeeklyPlansController#show as HTML
+  Parameters: {"id"=>"2023-44"}
+  [1m[36mWeeklyPlan Load (0.1ms)[0m  [1m[34mSELECT "weekly_plans".* FROM "weekly_plans" WHERE "weekly_plans"."week_number" = ? AND "weekly_plans"."year" = ? ORDER BY "weekly_plans"."id" ASC LIMIT ?[0m  [["week_number", 44], ["year", 2023], ["LIMIT", 1]]
+  ↳ app/controllers/weekly_plans_controller.rb:39:in `set_weekly_plan'
+  Rendering layout layouts/application.html.erb
+  Rendering weekly_plans/show.html.erb within layouts/application
+  Rendered weekly_plans/_shift.html.erb (Duration: 1.0ms | Allocations: 957)
+  Rendered weekly_plans/_shift.html.erb (Duration: 0.1ms | Allocations: 231)
+  Rendered weekly_plans/_weekly_plan.html.erb (Duration: 4.0ms | Allocations: 2270)
+  Rendered weekly_plans/show.html.erb within layouts/application (Duration: 8.6ms | Allocations: 3911)
+  Rendered layout layouts/application.html.erb (Duration: 12.2ms | Allocations: 6526)
+Completed 200 OK in 16ms (Views: 13.5ms | ActiveRecord: 0.1ms | Allocations: 8301)
+
+
+Started GET "/weekly_plans/2023-44" for ::1 at 2023-11-02 19:22:38 +0200
+Processing by WeeklyPlansController#show as HTML
+  Parameters: {"id"=>"2023-44"}
+  [1m[36mWeeklyPlan Load (0.1ms)[0m  [1m[34mSELECT "weekly_plans".* FROM "weekly_plans" WHERE "weekly_plans"."week_number" = ? AND "weekly_plans"."year" = ? ORDER BY "weekly_plans"."id" ASC LIMIT ?[0m  [["week_number", 44], ["year", 2023], ["LIMIT", 1]]
+  ↳ app/controllers/weekly_plans_controller.rb:39:in `set_weekly_plan'
+  Rendering layout layouts/application.html.erb
+  Rendering weekly_plans/show.html.erb within layouts/application
+  Rendered weekly_plans/_shift.html.erb (Duration: 0.9ms | Allocations: 992)
+  Rendered weekly_plans/_shift.html.erb (Duration: 0.1ms | Allocations: 223)
+  Rendered weekly_plans/_weekly_plan.html.erb (Duration: 2.5ms | Allocations: 2297)
+  Rendered weekly_plans/show.html.erb within layouts/application (Duration: 3.8ms | Allocations: 3933)
+  Rendered layout layouts/application.html.erb (Duration: 6.9ms | Allocations: 6549)
+Completed 200 OK in 10ms (Views: 8.2ms | ActiveRecord: 0.1ms | Allocations: 8300)
+
+
+Started GET "/weekly_plans/2023-44" for ::1 at 2023-11-02 19:22:43 +0200
+Processing by WeeklyPlansController#show as HTML
+  Parameters: {"id"=>"2023-44"}
+  [1m[36mWeeklyPlan Load (0.1ms)[0m  [1m[34mSELECT "weekly_plans".* FROM "weekly_plans" WHERE "weekly_plans"."week_number" = ? AND "weekly_plans"."year" = ? ORDER BY "weekly_plans"."id" ASC LIMIT ?[0m  [["week_number", 44], ["year", 2023], ["LIMIT", 1]]
+  ↳ app/controllers/weekly_plans_controller.rb:39:in `set_weekly_plan'
+  Rendering layout layouts/application.html.erb
+  Rendering weekly_plans/show.html.erb within layouts/application
+  Rendered weekly_plans/_shift.html.erb (Duration: 1.0ms | Allocations: 891)
+  Rendered weekly_plans/_shift.html.erb (Duration: 0.1ms | Allocations: 217)
+  Rendered weekly_plans/_weekly_plan.html.erb (Duration: 3.0ms | Allocations: 2190)
+  Rendered weekly_plans/show.html.erb within layouts/application (Duration: 5.6ms | Allocations: 3767)
+  Rendered layout layouts/application.html.erb (Duration: 8.4ms | Allocations: 6367)
+Completed 200 OK in 11ms (Views: 9.4ms | ActiveRecord: 0.1ms | Allocations: 8095)
+
+
+Started GET "/weekly_plans/2023-44" for ::1 at 2023-11-02 19:22:57 +0200
+Processing by WeeklyPlansController#show as HTML
+  Parameters: {"id"=>"2023-44"}
+  [1m[36mWeeklyPlan Load (0.1ms)[0m  [1m[34mSELECT "weekly_plans".* FROM "weekly_plans" WHERE "weekly_plans"."week_number" = ? AND "weekly_plans"."year" = ? ORDER BY "weekly_plans"."id" ASC LIMIT ?[0m  [["week_number", 44], ["year", 2023], ["LIMIT", 1]]
+  ↳ app/controllers/weekly_plans_controller.rb:39:in `set_weekly_plan'
+  Rendering layout layouts/application.html.erb
+  Rendering weekly_plans/show.html.erb within layouts/application
+  Rendered weekly_plans/_shift.html.erb (Duration: 0.8ms | Allocations: 906)
+  Rendered weekly_plans/_shift.html.erb (Duration: 0.1ms | Allocations: 219)
+  Rendered weekly_plans/_weekly_plan.html.erb (Duration: 2.6ms | Allocations: 2207)
+  Rendered weekly_plans/show.html.erb within layouts/application (Duration: 3.8ms | Allocations: 3778)
+  Rendered layout layouts/application.html.erb (Duration: 5.8ms | Allocations: 6379)
+Completed 200 OK in 9ms (Views: 7.0ms | ActiveRecord: 0.1ms | Allocations: 8129)
+
+
+Started GET "/weekly_plans/2023-44" for ::1 at 2023-11-02 19:23:01 +0200
+Processing by WeeklyPlansController#show as HTML
+  Parameters: {"id"=>"2023-44"}
+  [1m[36mWeeklyPlan Load (0.1ms)[0m  [1m[34mSELECT "weekly_plans".* FROM "weekly_plans" WHERE "weekly_plans"."week_number" = ? AND "weekly_plans"."year" = ? ORDER BY "weekly_plans"."id" ASC LIMIT ?[0m  [["week_number", 44], ["year", 2023], ["LIMIT", 1]]
+  ↳ app/controllers/weekly_plans_controller.rb:39:in `set_weekly_plan'
+  Rendering layout layouts/application.html.erb
+  Rendering weekly_plans/show.html.erb within layouts/application
+  Rendered weekly_plans/_shift.html.erb (Duration: 0.8ms | Allocations: 905)
+  Rendered weekly_plans/_shift.html.erb (Duration: 0.1ms | Allocations: 219)
+  Rendered weekly_plans/_weekly_plan.html.erb (Duration: 2.6ms | Allocations: 2206)
+  Rendered weekly_plans/show.html.erb within layouts/application (Duration: 3.6ms | Allocations: 3786)
+  Rendered layout layouts/application.html.erb (Duration: 7.2ms | Allocations: 6386)
+Completed 200 OK in 10ms (Views: 8.3ms | ActiveRecord: 0.1ms | Allocations: 8114)
+
+
+Subscription class not found: "CableReady::Stream"
+Subscription class not found: "CableReady::Stream"
+Started GET "/sessions/expires_at" for ::1 at 2023-11-02 19:23:08 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/sessions/expires_at"):
+  
+Started GET "/weekly_plans/2023-44" for ::1 at 2023-11-02 19:23:33 +0200
+Processing by WeeklyPlansController#show as HTML
+  Parameters: {"id"=>"2023-44"}
+  [1m[36mWeeklyPlan Load (0.1ms)[0m  [1m[34mSELECT "weekly_plans".* FROM "weekly_plans" WHERE "weekly_plans"."week_number" = ? AND "weekly_plans"."year" = ? ORDER BY "weekly_plans"."id" ASC LIMIT ?[0m  [["week_number", 44], ["year", 2023], ["LIMIT", 1]]
+  ↳ app/controllers/weekly_plans_controller.rb:39:in `set_weekly_plan'
+  Rendering layout layouts/application.html.erb
+  Rendering weekly_plans/show.html.erb within layouts/application
+  Rendered weekly_plans/_shift.html.erb (Duration: 2.6ms | Allocations: 770)
+  Rendered weekly_plans/_shift.html.erb (Duration: 0.1ms | Allocations: 147)
+  Rendered weekly_plans/_weekly_plan.html.erb (Duration: 5.5ms | Allocations: 1999)
+  Rendered weekly_plans/show.html.erb within layouts/application (Duration: 7.6ms | Allocations: 3585)
+  Rendered layout layouts/application.html.erb (Duration: 15.0ms | Allocations: 6185)
+Completed 200 OK in 20ms (Views: 16.9ms | ActiveRecord: 0.1ms | Allocations: 7903)
+
+
+Subscription class not found: "CableReady::Stream"
+Subscription class not found: "CableReady::Stream"
+Started GET "/sessions/expires_at" for ::1 at 2023-11-02 19:24:08 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/sessions/expires_at"):
+  
+Started GET "/weekly_plans/2023-44" for ::1 at 2023-11-02 19:24:15 +0200
+Processing by WeeklyPlansController#show as HTML
+  Parameters: {"id"=>"2023-44"}
+  [1m[36mWeeklyPlan Load (0.1ms)[0m  [1m[34mSELECT "weekly_plans".* FROM "weekly_plans" WHERE "weekly_plans"."week_number" = ? AND "weekly_plans"."year" = ? ORDER BY "weekly_plans"."id" ASC LIMIT ?[0m  [["week_number", 44], ["year", 2023], ["LIMIT", 1]]
+  ↳ app/controllers/weekly_plans_controller.rb:39:in `set_weekly_plan'
+  Rendering layout layouts/application.html.erb
+  Rendering weekly_plans/show.html.erb within layouts/application
+  Rendered weekly_plans/_shift.html.erb (Duration: 1.2ms | Allocations: 817)
+  Rendered weekly_plans/_shift.html.erb (Duration: 0.1ms | Allocations: 148)
+  Rendered weekly_plans/_weekly_plan.html.erb (Duration: 3.4ms | Allocations: 2047)
+  Rendered weekly_plans/show.html.erb within layouts/application (Duration: 5.4ms | Allocations: 3682)
+  Rendered layout layouts/application.html.erb (Duration: 11.9ms | Allocations: 6297)
+Completed 200 OK in 16ms (Views: 13.2ms | ActiveRecord: 0.1ms | Allocations: 8017)
+
+
+Started GET "/weekly_plans/2023-44" for ::1 at 2023-11-02 19:24:28 +0200
+Processing by WeeklyPlansController#show as HTML
+  Parameters: {"id"=>"2023-44"}
+  [1m[36mWeeklyPlan Load (0.1ms)[0m  [1m[34mSELECT "weekly_plans".* FROM "weekly_plans" WHERE "weekly_plans"."week_number" = ? AND "weekly_plans"."year" = ? ORDER BY "weekly_plans"."id" ASC LIMIT ?[0m  [["week_number", 44], ["year", 2023], ["LIMIT", 1]]
+  ↳ app/controllers/weekly_plans_controller.rb:39:in `set_weekly_plan'
+  Rendering layout layouts/application.html.erb
+  Rendering weekly_plans/show.html.erb within layouts/application
+  Rendered weekly_plans/_shift.html.erb (Duration: 1.9ms | Allocations: 814)
+  Rendered weekly_plans/_shift.html.erb (Duration: 0.1ms | Allocations: 148)
+  Rendered weekly_plans/_weekly_plan.html.erb (Duration: 3.9ms | Allocations: 2044)
+  Rendered weekly_plans/show.html.erb within layouts/application (Duration: 5.9ms | Allocations: 3628)
+  Rendered layout layouts/application.html.erb (Duration: 9.3ms | Allocations: 6229)
+Completed 200 OK in 13ms (Views: 10.8ms | ActiveRecord: 0.1ms | Allocations: 7960)
+
+
+Started GET "/weekly_plans/2023-44" for ::1 at 2023-11-02 19:25:02 +0200
+Processing by WeeklyPlansController#show as HTML
+  Parameters: {"id"=>"2023-44"}
+  [1m[36mWeeklyPlan Load (0.1ms)[0m  [1m[34mSELECT "weekly_plans".* FROM "weekly_plans" WHERE "weekly_plans"."week_number" = ? AND "weekly_plans"."year" = ? ORDER BY "weekly_plans"."id" ASC LIMIT ?[0m  [["week_number", 44], ["year", 2023], ["LIMIT", 1]]
+  ↳ app/controllers/weekly_plans_controller.rb:39:in `set_weekly_plan'
+  Rendering layout layouts/application.html.erb
+  Rendering weekly_plans/show.html.erb within layouts/application
+  Rendered weekly_plans/_shift.html.erb (Duration: 1.0ms | Allocations: 807)
+  Rendered weekly_plans/_shift.html.erb (Duration: 0.1ms | Allocations: 148)
+  Rendered weekly_plans/_weekly_plan.html.erb (Duration: 3.5ms | Allocations: 2037)
+  Rendered weekly_plans/show.html.erb within layouts/application (Duration: 5.5ms | Allocations: 3670)
+  Rendered layout layouts/application.html.erb (Duration: 11.2ms | Allocations: 6285)
+Completed 200 OK in 17ms (Views: 13.6ms | ActiveRecord: 0.1ms | Allocations: 8018)
+
+
+Subscription class not found: "CableReady::Stream"
+Subscription class not found: "CableReady::Stream"
+Started GET "/sessions/expires_at" for ::1 at 2023-11-02 19:25:08 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/sessions/expires_at"):
+  
+Started GET "/weekly_plans/2023-44" for ::1 at 2023-11-02 19:25:26 +0200
+Processing by WeeklyPlansController#show as HTML
+  Parameters: {"id"=>"2023-44"}
+  [1m[36mWeeklyPlan Load (0.1ms)[0m  [1m[34mSELECT "weekly_plans".* FROM "weekly_plans" WHERE "weekly_plans"."week_number" = ? AND "weekly_plans"."year" = ? ORDER BY "weekly_plans"."id" ASC LIMIT ?[0m  [["week_number", 44], ["year", 2023], ["LIMIT", 1]]
+  ↳ app/controllers/weekly_plans_controller.rb:39:in `set_weekly_plan'
+  Rendering layout layouts/application.html.erb
+  Rendering weekly_plans/show.html.erb within layouts/application
+  Rendered weekly_plans/_shift.html.erb (Duration: 1.3ms | Allocations: 814)
+  Rendered weekly_plans/_shift.html.erb (Duration: 0.1ms | Allocations: 148)
+  Rendered weekly_plans/_weekly_plan.html.erb (Duration: 3.0ms | Allocations: 2044)
+  Rendered weekly_plans/show.html.erb within layouts/application (Duration: 4.3ms | Allocations: 3677)
+  Rendered layout layouts/application.html.erb (Duration: 7.9ms | Allocations: 6292)
+Completed 200 OK in 12ms (Views: 9.3ms | ActiveRecord: 0.1ms | Allocations: 8011)
+
+
+Started GET "/weekly_plans/2023-44" for ::1 at 2023-11-02 19:25:36 +0200
+Processing by WeeklyPlansController#show as HTML
+  Parameters: {"id"=>"2023-44"}
+  [1m[36mWeeklyPlan Load (0.1ms)[0m  [1m[34mSELECT "weekly_plans".* FROM "weekly_plans" WHERE "weekly_plans"."week_number" = ? AND "weekly_plans"."year" = ? ORDER BY "weekly_plans"."id" ASC LIMIT ?[0m  [["week_number", 44], ["year", 2023], ["LIMIT", 1]]
+  ↳ app/controllers/weekly_plans_controller.rb:39:in `set_weekly_plan'
+  Rendering layout layouts/application.html.erb
+  Rendering weekly_plans/show.html.erb within layouts/application
+  Rendered weekly_plans/_shift.html.erb (Duration: 0.3ms | Allocations: 349)
+  Rendered weekly_plans/_shift.html.erb (Duration: 0.1ms | Allocations: 148)
+  Rendered weekly_plans/_weekly_plan.html.erb (Duration: 1.0ms | Allocations: 1083)
+  Rendered weekly_plans/show.html.erb within layouts/application (Duration: 1.4ms | Allocations: 2375)
+  Rendered layout layouts/application.html.erb (Duration: 5.8ms | Allocations: 4559)
+Completed 200 OK in 8ms (Views: 6.1ms | ActiveRecord: 0.1ms | Allocations: 5618)
+
+
+Started GET "/weekly_plans/2023-44" for ::1 at 2023-11-02 19:25:37 +0200
+Processing by WeeklyPlansController#show as HTML
+  Parameters: {"id"=>"2023-44"}
+  [1m[36mWeeklyPlan Load (0.2ms)[0m  [1m[34mSELECT "weekly_plans".* FROM "weekly_plans" WHERE "weekly_plans"."week_number" = ? AND "weekly_plans"."year" = ? ORDER BY "weekly_plans"."id" ASC LIMIT ?[0m  [["week_number", 44], ["year", 2023], ["LIMIT", 1]]
+  ↳ app/controllers/weekly_plans_controller.rb:39:in `set_weekly_plan'
+  Rendering layout layouts/application.html.erb
+  Rendering weekly_plans/show.html.erb within layouts/application
+  Rendered weekly_plans/_shift.html.erb (Duration: 0.3ms | Allocations: 349)
+  Rendered weekly_plans/_shift.html.erb (Duration: 0.1ms | Allocations: 148)
+  Rendered weekly_plans/_weekly_plan.html.erb (Duration: 1.1ms | Allocations: 1083)
+  Rendered weekly_plans/show.html.erb within layouts/application (Duration: 2.8ms | Allocations: 2351)
+  Rendered layout layouts/application.html.erb (Duration: 5.7ms | Allocations: 4535)
+Completed 200 OK in 10ms (Views: 6.5ms | ActiveRecord: 0.2ms | Allocations: 5465)
+
+
+Started GET "/weekly_plans/2023-44" for ::1 at 2023-11-02 19:25:49 +0200
+Processing by WeeklyPlansController#show as HTML
+  Parameters: {"id"=>"2023-44"}
+  [1m[36mWeeklyPlan Load (1.0ms)[0m  [1m[34mSELECT "weekly_plans".* FROM "weekly_plans" WHERE "weekly_plans"."week_number" = ? AND "weekly_plans"."year" = ? ORDER BY "weekly_plans"."id" ASC LIMIT ?[0m  [["week_number", 44], ["year", 2023], ["LIMIT", 1]]
+  ↳ app/controllers/weekly_plans_controller.rb:39:in `set_weekly_plan'
+  Rendering layout layouts/application.html.erb
+  Rendering weekly_plans/show.html.erb within layouts/application
+  Rendered weekly_plans/_shift.html.erb (Duration: 2.7ms | Allocations: 741)
+  Rendered weekly_plans/_shift.html.erb (Duration: 0.1ms | Allocations: 144)
+  Rendered weekly_plans/_weekly_plan.html.erb (Duration: 7.5ms | Allocations: 1967)
+  Rendered weekly_plans/show.html.erb within layouts/application (Duration: 12.6ms | Allocations: 3550)
+  Rendered layout layouts/application.html.erb (Duration: 22.0ms | Allocations: 6150)
+Completed 200 OK in 37ms (Views: 28.5ms | ActiveRecord: 1.0ms | Allocations: 7735)
+
+
+Started GET "/sessions/expires_at" for ::1 at 2023-11-02 19:26:08 +0200
+Subscription class not found: "CableReady::Stream"
+  
+ActionController::RoutingError (No route matches [GET] "/sessions/expires_at"):
+  
+Subscription class not found: "CableReady::Stream"
+Started GET "/weekly_plans/2023-44" for ::1 at 2023-11-02 19:26:08 +0200
+Processing by WeeklyPlansController#show as HTML
+  Parameters: {"id"=>"2023-44"}
+  [1m[36mWeeklyPlan Load (0.2ms)[0m  [1m[34mSELECT "weekly_plans".* FROM "weekly_plans" WHERE "weekly_plans"."week_number" = ? AND "weekly_plans"."year" = ? ORDER BY "weekly_plans"."id" ASC LIMIT ?[0m  [["week_number", 44], ["year", 2023], ["LIMIT", 1]]
+  ↳ app/controllers/weekly_plans_controller.rb:39:in `set_weekly_plan'
+  Rendering layout layouts/application.html.erb
+  Rendering weekly_plans/show.html.erb within layouts/application
+  Rendered weekly_plans/_shift.html.erb (Duration: 0.9ms | Allocations: 771)
+  Rendered weekly_plans/_shift.html.erb (Duration: 0.1ms | Allocations: 144)
+  Rendered weekly_plans/_weekly_plan.html.erb (Duration: 3.1ms | Allocations: 2437)
+  Rendered weekly_plans/show.html.erb within layouts/application (Duration: 4.9ms | Allocations: 4358)
+  Rendered layout layouts/application.html.erb (Duration: 23.4ms | Allocations: 8342)
+Completed 200 OK in 31ms (Views: 25.9ms | ActiveRecord: 0.2ms | Allocations: 10869)
+
+
+Started GET "/weekly_plans/2023-44" for ::1 at 2023-11-02 19:26:31 +0200
+Processing by WeeklyPlansController#show as HTML
+  Parameters: {"id"=>"2023-44"}
+  [1m[36mWeeklyPlan Load (0.1ms)[0m  [1m[34mSELECT "weekly_plans".* FROM "weekly_plans" WHERE "weekly_plans"."week_number" = ? AND "weekly_plans"."year" = ? ORDER BY "weekly_plans"."id" ASC LIMIT ?[0m  [["week_number", 44], ["year", 2023], ["LIMIT", 1]]
+  ↳ app/controllers/weekly_plans_controller.rb:39:in `set_weekly_plan'
+  Rendering layout layouts/application.html.erb
+  Rendering weekly_plans/show.html.erb within layouts/application
+  Rendered weekly_plans/_shift.html.erb (Duration: 0.9ms | Allocations: 741)
+  Rendered weekly_plans/_shift.html.erb (Duration: 0.2ms | Allocations: 144)
+  Rendered weekly_plans/_weekly_plan.html.erb (Duration: 17.9ms | Allocations: 1968)
+  Rendered weekly_plans/show.html.erb within layouts/application (Duration: 28.0ms | Allocations: 3596)
+  Rendered layout layouts/application.html.erb (Duration: 31.8ms | Allocations: 6211)
+Completed 200 OK in 38ms (Views: 34.3ms | ActiveRecord: 0.1ms | Allocations: 7934)
+
+
+Started GET "/weekly_plans/2023-44" for ::1 at 2023-11-02 19:27:05 +0200
+Processing by WeeklyPlansController#show as HTML
+  Parameters: {"id"=>"2023-44"}
+  [1m[36mWeeklyPlan Load (0.1ms)[0m  [1m[34mSELECT "weekly_plans".* FROM "weekly_plans" WHERE "weekly_plans"."week_number" = ? AND "weekly_plans"."year" = ? ORDER BY "weekly_plans"."id" ASC LIMIT ?[0m  [["week_number", 44], ["year", 2023], ["LIMIT", 1]]
+  ↳ app/controllers/weekly_plans_controller.rb:39:in `set_weekly_plan'
+  Rendering layout layouts/application.html.erb
+  Rendering weekly_plans/show.html.erb within layouts/application
+  Rendered weekly_plans/_shift.html.erb (Duration: 1.0ms | Allocations: 875)
+  Rendered weekly_plans/_shift.html.erb (Duration: 0.1ms | Allocations: 216)
+  Rendered weekly_plans/_weekly_plan.html.erb (Duration: 2.7ms | Allocations: 2173)
+  Rendered weekly_plans/show.html.erb within layouts/application (Duration: 4.8ms | Allocations: 3763)
+  Rendered layout layouts/application.html.erb (Duration: 8.8ms | Allocations: 6363)
+Completed 200 OK in 13ms (Views: 10.0ms | ActiveRecord: 0.1ms | Allocations: 8094)
+
+
+Subscription class not found: "CableReady::Stream"
+Subscription class not found: "CableReady::Stream"
+Started GET "/sessions/expires_at" for ::1 at 2023-11-02 19:27:08 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/sessions/expires_at"):
+  
+Started GET "/weekly_plans/2023-44" for ::1 at 2023-11-02 19:27:11 +0200
+Processing by WeeklyPlansController#show as HTML
+  Parameters: {"id"=>"2023-44"}
+  [1m[36mWeeklyPlan Load (0.1ms)[0m  [1m[34mSELECT "weekly_plans".* FROM "weekly_plans" WHERE "weekly_plans"."week_number" = ? AND "weekly_plans"."year" = ? ORDER BY "weekly_plans"."id" ASC LIMIT ?[0m  [["week_number", 44], ["year", 2023], ["LIMIT", 1]]
+  ↳ app/controllers/weekly_plans_controller.rb:39:in `set_weekly_plan'
+  Rendering layout layouts/application.html.erb
+  Rendering weekly_plans/show.html.erb within layouts/application
+  Rendered weekly_plans/_shift.html.erb (Duration: 0.8ms | Allocations: 819)
+  Rendered weekly_plans/_shift.html.erb (Duration: 0.1ms | Allocations: 216)
+  Rendered weekly_plans/_weekly_plan.html.erb (Duration: 2.9ms | Allocations: 2117)
+  Rendered weekly_plans/show.html.erb within layouts/application (Duration: 6.4ms | Allocations: 3741)
+  Rendered layout layouts/application.html.erb (Duration: 16.3ms | Allocations: 6356)
+Completed 200 OK in 23ms (Views: 17.5ms | ActiveRecord: 0.1ms | Allocations: 8075)
+
+
+Started GET "/weekly_plans/2023-44" for ::1 at 2023-11-02 19:27:29 +0200
+Processing by WeeklyPlansController#show as HTML
+  Parameters: {"id"=>"2023-44"}
+  [1m[36mWeeklyPlan Load (0.1ms)[0m  [1m[34mSELECT "weekly_plans".* FROM "weekly_plans" WHERE "weekly_plans"."week_number" = ? AND "weekly_plans"."year" = ? ORDER BY "weekly_plans"."id" ASC LIMIT ?[0m  [["week_number", 44], ["year", 2023], ["LIMIT", 1]]
+  ↳ app/controllers/weekly_plans_controller.rb:39:in `set_weekly_plan'
+  Rendering layout layouts/application.html.erb
+  Rendering weekly_plans/show.html.erb within layouts/application
+  Rendered weekly_plans/_shift.html.erb (Duration: 1.0ms | Allocations: 1035)
+  Rendered weekly_plans/_shift.html.erb (Duration: 0.2ms | Allocations: 250)
+  Rendered weekly_plans/_weekly_plan.html.erb (Duration: 2.5ms | Allocations: 2367)
+  Rendered weekly_plans/show.html.erb within layouts/application (Duration: 5.8ms | Allocations: 3965)
+  Rendered layout layouts/application.html.erb (Duration: 10.7ms | Allocations: 6580)
+Completed 200 OK in 13ms (Views: 11.6ms | ActiveRecord: 0.1ms | Allocations: 8308)
+
+
+Started GET "/weekly_plans/2023-44" for ::1 at 2023-11-02 19:27:44 +0200
+Processing by WeeklyPlansController#show as HTML
+  Parameters: {"id"=>"2023-44"}
+  [1m[36mWeeklyPlan Load (0.2ms)[0m  [1m[34mSELECT "weekly_plans".* FROM "weekly_plans" WHERE "weekly_plans"."week_number" = ? AND "weekly_plans"."year" = ? ORDER BY "weekly_plans"."id" ASC LIMIT ?[0m  [["week_number", 44], ["year", 2023], ["LIMIT", 1]]
+  ↳ app/controllers/weekly_plans_controller.rb:39:in `set_weekly_plan'
+  Rendering layout layouts/application.html.erb
+  Rendering weekly_plans/show.html.erb within layouts/application
+  Rendered weekly_plans/_shift.html.erb (Duration: 1.6ms | Allocations: 819)
+  Rendered weekly_plans/_shift.html.erb (Duration: 0.1ms | Allocations: 216)
+  Rendered weekly_plans/_weekly_plan.html.erb (Duration: 3.7ms | Allocations: 2117)
+  Rendered weekly_plans/show.html.erb within layouts/application (Duration: 5.9ms | Allocations: 3703)
+  Rendered layout layouts/application.html.erb (Duration: 8.6ms | Allocations: 6303)
+Completed 200 OK in 13ms (Views: 9.7ms | ActiveRecord: 0.2ms | Allocations: 8031)
+
+
+Started GET "/weekly_plans/2023-44" for ::1 at 2023-11-02 19:28:07 +0200
+Processing by WeeklyPlansController#show as HTML
+  Parameters: {"id"=>"2023-44"}
+  [1m[36mWeeklyPlan Load (0.2ms)[0m  [1m[34mSELECT "weekly_plans".* FROM "weekly_plans" WHERE "weekly_plans"."week_number" = ? AND "weekly_plans"."year" = ? ORDER BY "weekly_plans"."id" ASC LIMIT ?[0m  [["week_number", 44], ["year", 2023], ["LIMIT", 1]]
+  ↳ app/controllers/weekly_plans_controller.rb:39:in `set_weekly_plan'
+  Rendering layout layouts/application.html.erb
+  Rendering weekly_plans/show.html.erb within layouts/application
+  Rendered weekly_plans/_shift.html.erb (Duration: 1.0ms | Allocations: 820)
+  Rendered weekly_plans/_shift.html.erb (Duration: 0.1ms | Allocations: 216)
+  Rendered weekly_plans/_weekly_plan.html.erb (Duration: 5.4ms | Allocations: 2118)
+  Rendered weekly_plans/show.html.erb within layouts/application (Duration: 10.3ms | Allocations: 3692)
+  Rendered layout layouts/application.html.erb (Duration: 29.1ms | Allocations: 6292)
+Completed 200 OK in 36ms (Views: 30.9ms | ActiveRecord: 0.2ms | Allocations: 8020)
+
+
+Subscription class not found: "CableReady::Stream"
+Subscription class not found: "CableReady::Stream"
+Started GET "/sessions/expires_at" for ::1 at 2023-11-02 19:28:08 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/sessions/expires_at"):
+  
+Started GET "/weekly_plans/2023-44" for ::1 at 2023-11-02 19:28:17 +0200
+Processing by WeeklyPlansController#show as HTML
+  Parameters: {"id"=>"2023-44"}
+  [1m[36mWeeklyPlan Load (0.1ms)[0m  [1m[34mSELECT "weekly_plans".* FROM "weekly_plans" WHERE "weekly_plans"."week_number" = ? AND "weekly_plans"."year" = ? ORDER BY "weekly_plans"."id" ASC LIMIT ?[0m  [["week_number", 44], ["year", 2023], ["LIMIT", 1]]
+  ↳ app/controllers/weekly_plans_controller.rb:39:in `set_weekly_plan'
+  Rendering layout layouts/application.html.erb
+  Rendering weekly_plans/show.html.erb within layouts/application
+  Rendered weekly_plans/_shift.html.erb (Duration: 1.3ms | Allocations: 912)
+  Rendered weekly_plans/_shift.html.erb (Duration: 0.2ms | Allocations: 234)
+  Rendered weekly_plans/_weekly_plan.html.erb (Duration: 3.4ms | Allocations: 2228)
+  Rendered weekly_plans/show.html.erb within layouts/application (Duration: 5.5ms | Allocations: 3849)
+  Rendered layout layouts/application.html.erb (Duration: 10.0ms | Allocations: 6464)
+Completed 200 OK in 13ms (Views: 11.0ms | ActiveRecord: 0.1ms | Allocations: 8187)
+
+
+Started GET "/weekly_plans/2023-44" for ::1 at 2023-11-02 19:28:30 +0200
+Processing by WeeklyPlansController#show as HTML
+  Parameters: {"id"=>"2023-44"}
+  [1m[36mWeeklyPlan Load (0.1ms)[0m  [1m[34mSELECT "weekly_plans".* FROM "weekly_plans" WHERE "weekly_plans"."week_number" = ? AND "weekly_plans"."year" = ? ORDER BY "weekly_plans"."id" ASC LIMIT ?[0m  [["week_number", 44], ["year", 2023], ["LIMIT", 1]]
+  ↳ app/controllers/weekly_plans_controller.rb:39:in `set_weekly_plan'
+  Rendering layout layouts/application.html.erb
+  Rendering weekly_plans/show.html.erb within layouts/application
+  Rendered weekly_plans/_shift.html.erb (Duration: 1.8ms | Allocations: 889)
+  Rendered weekly_plans/_shift.html.erb (Duration: 0.2ms | Allocations: 217)
+  Rendered weekly_plans/_weekly_plan.html.erb (Duration: 5.9ms | Allocations: 2188)
+  Rendered weekly_plans/show.html.erb within layouts/application (Duration: 7.8ms | Allocations: 3818)
+  Rendered layout layouts/application.html.erb (Duration: 13.0ms | Allocations: 6433)
+Completed 200 OK in 16ms (Views: 14.2ms | ActiveRecord: 0.1ms | Allocations: 8166)
+
+
+Started GET "/weekly_plans/2023-44" for ::1 at 2023-11-02 19:28:35 +0200
+Processing by WeeklyPlansController#show as HTML
+  Parameters: {"id"=>"2023-44"}
+  [1m[36mWeeklyPlan Load (0.1ms)[0m  [1m[34mSELECT "weekly_plans".* FROM "weekly_plans" WHERE "weekly_plans"."week_number" = ? AND "weekly_plans"."year" = ? ORDER BY "weekly_plans"."id" ASC LIMIT ?[0m  [["week_number", 44], ["year", 2023], ["LIMIT", 1]]
+  ↳ app/controllers/weekly_plans_controller.rb:39:in `set_weekly_plan'
+  Rendering layout layouts/application.html.erb
+  Rendering weekly_plans/show.html.erb within layouts/application
+  Rendered weekly_plans/_shift.html.erb (Duration: 21.2ms | Allocations: 890)
+  Rendered weekly_plans/_shift.html.erb (Duration: 0.9ms | Allocations: 217)
+  Rendered weekly_plans/_weekly_plan.html.erb (Duration: 28.5ms | Allocations: 2189)
+  Rendered weekly_plans/show.html.erb within layouts/application (Duration: 32.1ms | Allocations: 3773)
+  Rendered layout layouts/application.html.erb (Duration: 52.1ms | Allocations: 6373)
+Completed 200 OK in 57ms (Views: 53.4ms | ActiveRecord: 0.1ms | Allocations: 8104)
+
+
+Started GET "/weekly_plans/2023-44" for ::1 at 2023-11-02 19:28:49 +0200
+Processing by WeeklyPlansController#show as HTML
+  Parameters: {"id"=>"2023-44"}
+  [1m[36mWeeklyPlan Load (0.1ms)[0m  [1m[34mSELECT "weekly_plans".* FROM "weekly_plans" WHERE "weekly_plans"."week_number" = ? AND "weekly_plans"."year" = ? ORDER BY "weekly_plans"."id" ASC LIMIT ?[0m  [["week_number", 44], ["year", 2023], ["LIMIT", 1]]
+  ↳ app/controllers/weekly_plans_controller.rb:39:in `set_weekly_plan'
+  Rendering layout layouts/application.html.erb
+  Rendering weekly_plans/show.html.erb within layouts/application
+  Rendered weekly_plans/_shift.html.erb (Duration: 1.4ms | Allocations: 903)
+  Rendered weekly_plans/_shift.html.erb (Duration: 0.1ms | Allocations: 219)
+  Rendered weekly_plans/_weekly_plan.html.erb (Duration: 3.1ms | Allocations: 2204)
+  Rendered weekly_plans/show.html.erb within layouts/application (Duration: 20.5ms | Allocations: 3802)
+  Rendered layout layouts/application.html.erb (Duration: 25.9ms | Allocations: 6402)
+Completed 200 OK in 32ms (Views: 27.0ms | ActiveRecord: 0.1ms | Allocations: 8130)
+
+
+Subscription class not found: "CableReady::Stream"
+Subscription class not found: "CableReady::Stream"
+Started GET "/sessions/expires_at" for ::1 at 2023-11-02 19:29:08 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/sessions/expires_at"):
+  
+Started GET "/weekly_plans/2023-44" for ::1 at 2023-11-02 19:29:28 +0200
+Processing by WeeklyPlansController#show as HTML
+  Parameters: {"id"=>"2023-44"}
+  [1m[36mWeeklyPlan Load (0.2ms)[0m  [1m[34mSELECT "weekly_plans".* FROM "weekly_plans" WHERE "weekly_plans"."week_number" = ? AND "weekly_plans"."year" = ? ORDER BY "weekly_plans"."id" ASC LIMIT ?[0m  [["week_number", 44], ["year", 2023], ["LIMIT", 1]]
+  ↳ app/controllers/weekly_plans_controller.rb:39:in `set_weekly_plan'
+  Rendering layout layouts/application.html.erb
+  Rendering weekly_plans/show.html.erb within layouts/application
+  Rendered weekly_plans/_shift.html.erb (Duration: 5.8ms | Allocations: 5727)
+  Rendered weekly_plans/_weekly_plan.html.erb (Duration: 8.0ms | Allocations: 6298)
+  Rendered weekly_plans/show.html.erb within layouts/application (Duration: 10.5ms | Allocations: 7917)
+  Rendered layout layouts/application.html.erb (Duration: 10.6ms | Allocations: 8002)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.2ms | Allocations: 9708)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `vol' for #<ActionView::Base:0x0000000000d750>
+
+@output_buffer.safe_append='      <td>'.freeze;@output_buffer.append=( days[day] );@output_buffer.safe_append=' '.freeze;@output_buffer.append=( (@weekly_plan.sunday_of_cweek + vol.days).strftime("%d/%m"));@output_buffer.safe_append='</td>
+                                                                                                                                                                                 ^^^):
+     7:     <tr>
+     8:     <td> שעות </td>
+     9:     <%(0..5).each do |day| %>
+    10:       <td><%= days[day] %> <%= (@weekly_plan.sunday_of_cweek + vol.days).strftime("%d/%m")%></td>
+    11:       <td>שם מתנדב</td>
+    12:     <%end %>
+    13:     </tr>
+  
+app/views/weekly_plans/_shift.html.erb:10
+app/views/weekly_plans/_shift.html.erb:9
+app/views/weekly_plans/_weekly_plan.html.erb:9
+app/views/weekly_plans/_weekly_plan.html.erb:7
+app/views/weekly_plans/show.html.erb:3
+Started GET "/weekly_plans/2023-44" for ::1 at 2023-11-02 19:29:38 +0200
+Processing by WeeklyPlansController#show as HTML
+  Parameters: {"id"=>"2023-44"}
+  [1m[36mWeeklyPlan Load (0.2ms)[0m  [1m[34mSELECT "weekly_plans".* FROM "weekly_plans" WHERE "weekly_plans"."week_number" = ? AND "weekly_plans"."year" = ? ORDER BY "weekly_plans"."id" ASC LIMIT ?[0m  [["week_number", 44], ["year", 2023], ["LIMIT", 1]]
+  ↳ app/controllers/weekly_plans_controller.rb:39:in `set_weekly_plan'
+  Rendering layout layouts/application.html.erb
+  Rendering weekly_plans/show.html.erb within layouts/application
+  Rendered weekly_plans/_shift.html.erb (Duration: 1.3ms | Allocations: 903)
+  Rendered weekly_plans/_shift.html.erb (Duration: 0.2ms | Allocations: 219)
+  Rendered weekly_plans/_weekly_plan.html.erb (Duration: 3.1ms | Allocations: 2204)
+  Rendered weekly_plans/show.html.erb within layouts/application (Duration: 4.6ms | Allocations: 3822)
+  Rendered layout layouts/application.html.erb (Duration: 9.1ms | Allocations: 6437)
+Completed 200 OK in 13ms (Views: 10.0ms | ActiveRecord: 0.2ms | Allocations: 8162)
+
+
+Started GET "/sessions/expires_at" for ::1 at 2023-11-02 19:30:08 +0200
+Subscription class not found: "CableReady::Stream"
+Subscription class not found: "CableReady::Stream"
+  
+ActionController::RoutingError (No route matches [GET] "/sessions/expires_at"):
+  
+Started GET "/weekly_plans/2023-44" for ::1 at 2023-11-02 19:30:12 +0200
+Processing by WeeklyPlansController#show as HTML
+  Parameters: {"id"=>"2023-44"}
+  [1m[36mWeeklyPlan Load (0.2ms)[0m  [1m[34mSELECT "weekly_plans".* FROM "weekly_plans" WHERE "weekly_plans"."week_number" = ? AND "weekly_plans"."year" = ? ORDER BY "weekly_plans"."id" ASC LIMIT ?[0m  [["week_number", 44], ["year", 2023], ["LIMIT", 1]]
+  ↳ app/controllers/weekly_plans_controller.rb:39:in `set_weekly_plan'
+  Rendering layout layouts/application.html.erb
+  Rendering weekly_plans/show.html.erb within layouts/application
+  Rendered weekly_plans/_shift.html.erb (Duration: 0.7ms | Allocations: 1721)
+  Rendered weekly_plans/_weekly_plan.html.erb (Duration: 2.0ms | Allocations: 2291)
+  Rendered weekly_plans/show.html.erb within layouts/application (Duration: 3.9ms | Allocations: 3872)
+  Rendered layout layouts/application.html.erb (Duration: 4.0ms | Allocations: 3957)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.2ms | Allocations: 5648)
+
+
+  
+ActionView::Template::Error (bad value for range):
+     6:    <table dir='rtl' id='plan'>
+     7:     <tr>
+     8:     <td> שעות </td>
+     9:     <%(0..days).each do |day| %>
+    10:       <td><%= days[day] %> <%= (@weekly_plan.sunday_of_cweek + day.days).strftime("%d/%m")%></td>
+    11:       <td>שם מתנדב</td>
+    12:     <%end %>
+  
+app/views/weekly_plans/_shift.html.erb:9
+app/views/weekly_plans/_weekly_plan.html.erb:9
+app/views/weekly_plans/_weekly_plan.html.erb:7
+app/views/weekly_plans/show.html.erb:3
+Started PUT "/__web_console/repl_sessions/bbd39f5ee998156975ad1e26b531914b" for ::1 at 2023-11-02 19:30:24 +0200
+Started PUT "/__web_console/repl_sessions/bbd39f5ee998156975ad1e26b531914b" for ::1 at 2023-11-02 19:30:24 +0200
+Started GET "/weekly_plans/2023-44" for ::1 at 2023-11-02 19:30:43 +0200
+Processing by WeeklyPlansController#show as HTML
+  Parameters: {"id"=>"2023-44"}
+  [1m[36mWeeklyPlan Load (0.1ms)[0m  [1m[34mSELECT "weekly_plans".* FROM "weekly_plans" WHERE "weekly_plans"."week_number" = ? AND "weekly_plans"."year" = ? ORDER BY "weekly_plans"."id" ASC LIMIT ?[0m  [["week_number", 44], ["year", 2023], ["LIMIT", 1]]
+  ↳ app/controllers/weekly_plans_controller.rb:39:in `set_weekly_plan'
+  Rendering layout layouts/application.html.erb
+  Rendering weekly_plans/show.html.erb within layouts/application
+  Rendered weekly_plans/_shift.html.erb (Duration: 3.0ms | Allocations: 904)
+  Rendered weekly_plans/_shift.html.erb (Duration: 0.1ms | Allocations: 206)
+  Rendered weekly_plans/_weekly_plan.html.erb (Duration: 5.2ms | Allocations: 2194)
+  Rendered weekly_plans/show.html.erb within layouts/application (Duration: 9.0ms | Allocations: 3777)
+  Rendered layout layouts/application.html.erb (Duration: 13.5ms | Allocations: 6392)
+Completed 200 OK in 16ms (Views: 14.5ms | ActiveRecord: 0.1ms | Allocations: 8163)
+
+
+Started GET "/weekly_plans/2023-44" for ::1 at 2023-11-02 19:30:53 +0200
+Processing by WeeklyPlansController#show as HTML
+  Parameters: {"id"=>"2023-44"}
+  [1m[36mWeeklyPlan Load (0.1ms)[0m  [1m[34mSELECT "weekly_plans".* FROM "weekly_plans" WHERE "weekly_plans"."week_number" = ? AND "weekly_plans"."year" = ? ORDER BY "weekly_plans"."id" ASC LIMIT ?[0m  [["week_number", 44], ["year", 2023], ["LIMIT", 1]]
+  ↳ app/controllers/weekly_plans_controller.rb:39:in `set_weekly_plan'
+  Rendering layout layouts/application.html.erb
+  Rendering weekly_plans/show.html.erb within layouts/application
+  Rendered weekly_plans/_shift.html.erb (Duration: 1.3ms | Allocations: 883)
+  Rendered weekly_plans/_shift.html.erb (Duration: 0.1ms | Allocations: 176)
+  Rendered weekly_plans/_weekly_plan.html.erb (Duration: 4.0ms | Allocations: 2142)
+  Rendered weekly_plans/show.html.erb within layouts/application (Duration: 5.4ms | Allocations: 3743)
+  Rendered layout layouts/application.html.erb (Duration: 8.1ms | Allocations: 6343)
+Completed 200 OK in 14ms (Views: 9.8ms | ActiveRecord: 0.1ms | Allocations: 8071)
+
+
+Started GET "/weekly_plans/2023-44" for ::1 at 2023-11-02 19:30:56 +0200
+Processing by WeeklyPlansController#show as HTML
+  Parameters: {"id"=>"2023-44"}
+  [1m[36mWeeklyPlan Load (0.1ms)[0m  [1m[34mSELECT "weekly_plans".* FROM "weekly_plans" WHERE "weekly_plans"."week_number" = ? AND "weekly_plans"."year" = ? ORDER BY "weekly_plans"."id" ASC LIMIT ?[0m  [["week_number", 44], ["year", 2023], ["LIMIT", 1]]
+  ↳ app/controllers/weekly_plans_controller.rb:39:in `set_weekly_plan'
+  Rendering layout layouts/application.html.erb
+  Rendering weekly_plans/show.html.erb within layouts/application
+  Rendered weekly_plans/_shift.html.erb (Duration: 1.4ms | Allocations: 913)
+  Rendered weekly_plans/_shift.html.erb (Duration: 0.1ms | Allocations: 194)
+  Rendered weekly_plans/_weekly_plan.html.erb (Duration: 3.2ms | Allocations: 2190)
+  Rendered weekly_plans/show.html.erb within layouts/application (Duration: 4.4ms | Allocations: 3791)
+  Rendered layout layouts/application.html.erb (Duration: 7.0ms | Allocations: 6391)
+Completed 200 OK in 10ms (Views: 8.2ms | ActiveRecord: 0.1ms | Allocations: 8119)
+
+
+Subscription class not found: "CableReady::Stream"
+Subscription class not found: "CableReady::Stream"
+Started GET "/sessions/expires_at" for ::1 at 2023-11-02 19:31:08 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/sessions/expires_at"):
+  

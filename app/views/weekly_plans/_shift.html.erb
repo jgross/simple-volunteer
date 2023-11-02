@@ -6,24 +6,22 @@
    <table dir='rtl' id='plan'>
     <tr>
     <td> שעות </td>
-    <%(0..5).each do |vol| %>
-      <td><%= days[vol] %> <%= (@weekly_plan.sunday_of_cweek + vol.days).strftime("%d/%m")%></td>
+    <%(0..number_of_days).each do |day| %>
+      <td><%= days[day] %> <%= (@weekly_plan.sunday_of_cweek + day.days).strftime("%d/%m")%></td>
       <td>שם מתנדב</td>
     <%end %>
     </tr>
     <tr>
-           <td rowspan=7> <%= time_range%> </td>
+           <td rowspan=<%=number_of_volunteers+1 %>> <%= time_range%> </td>
 </tr>
-     <% (1..6).each do |day| %>
-
-     <tr>
-       <%(1..6).each do |vol| %>
+     <% (1..number_of_volunteers).each do |day| %>
+       <tr>
+       <%(1..number_of_days+1).each do |vol| %>
          <% i += 1 %>
-         
          <td colspan=2 style="border:1px solid gray">
          מתנדב <%= day%>
          <input  type='text' name="weekly_plan[data][]" value='<%= weekly_plan.data[i - 1] || nil %>'/> </td>
        <%end %>
      </tr>
      <% end %>
-   </table>
+</table>
