@@ -17,7 +17,8 @@
      <tr>
        <td> מנהל משמרת</td>
         <%(0..number_of_days).each do |day| %>
-        <td style='background: #008000'><input  type='text' name="weekly_plan[data][]" value='<%= weekly_plan.data[i - 1] || nil %>'/></td>
+          <% i += 1 %>
+          <td style='background: #008000'><input  type='text' name="weekly_plan[data][]" value='<%= weekly_plan.data[i - 1] || nil %>'/></td>
       <%end %>
 
     </tr>
