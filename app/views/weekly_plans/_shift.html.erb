@@ -12,16 +12,22 @@
       <%end %>
     </tr>
     <tr>
-      <td rowspan=<%=number_of_volunteers+1 %>> <%= time_range%> </td>
+      <td rowspan=<%=number_of_volunteers+2 %>> <%= time_range%> </td>
     </tr>
-    
+     <tr>
+       <td> מנהל משמרת</td>
+        <%(0..number_of_days).each do |day| %>
+        <td style='background: #008000'><input  type='text' name="weekly_plan[data][]" value='<%= weekly_plan.data[i - 1] || nil %>'/></td>
+      <%end %>
+
+    </tr>
      <% (1..number_of_volunteers).each do |day| %>
        <tr>
        <td>  <%= day%> </td>
+       
        <%(1..number_of_days+1).each do |vol| %>
          <% i += 1 %>
          <td style="border:1px solid gray">
-         
          <input  type='text' name="weekly_plan[data][]" value='<%= weekly_plan.data[i - 1] || nil %>'/>  </td>
        <%end %>
      </tr>
