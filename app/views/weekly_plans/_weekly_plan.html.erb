@@ -6,7 +6,7 @@
   </p>
   <%= form_for(weekly_plan) do |form| %>
 
-  <%= render partial: 'shift', locals:{weekly_plan: weekly_plan,i: 0, time_range: '08:30-12:00', name: 'משמרת בוקר' ,number_of_volunteers: 10, number_of_days: 5}%>
+  <%= render partial: 'shift', locals:{weekly_plan: weekly_plan,i: 0, time_range: '08:00-12:00', name: 'משמרת בוקר' ,number_of_volunteers: 10, number_of_days: 5}%>
   <%= render partial: 'shift', locals:{weekly_plan: weekly_plan,i: 66 ,time_range: '13:00-17:00', name: 'משמרת ערב', number_of_volunteers: 6, number_of_days: 4}%>
 
 <div style='padding-top:20px'>
