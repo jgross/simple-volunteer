@@ -1,0 +1,43 @@
+<%= form_with(model: @weekly_plan) do |form| %>
+    <% if @weekly_plan.errors.any? %>
+      <div style="color: red">
+        <h2><%= pluralize(@weekly_plan.errors.count, "error") %> prohibited this @weekly_plan from being saved:</h2>
+  
+        <ul>
+          <% @weekly_plan.errors.each do |error| %>
+            <li><%= error.full_message %></li>
+          <% end %>
+        </ul>
+      </div>
+    <% end %>
+  
+
+
+    <div>
+    <%= form.label :first_shift_time, style: "display: block" %>
+    <%= form.text_field :first_shift_time %>
+  </div>
+
+  
+  <div>
+  <%= form.label :first_shift_number_of_volunteers, style: "display: block" %>
+  <%= form.text_field :first_shift_number_of_volunteers %>
+</div>
+  
+<div>
+<%= form.label :second_shift_time, style: "display: block" %>
+<%= form.text_field :second_shift_time %>
+</div>
+
+
+<div>
+<%= form.label :second_shift_number_of_volunteers, style: "display: block" %>
+<%= form.text_field :second_shift_number_of_volunteers %>
+</div>
+
+
+    <div>
+      <%= form.submit %>
+    </div>
+  <% end %>
+  
