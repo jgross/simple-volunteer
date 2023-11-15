@@ -10,7 +10,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_11_15_075445) do
+ActiveRecord::Schema[7.0].define(version: 2023_11_15_201700) do
+  create_table "orgs", force: :cascade do |t|
+    t.string "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "weekly_plans", force: :cascade do |t|
     t.text "data"
     t.integer "year"
@@ -18,6 +24,8 @@ ActiveRecord::Schema[7.0].define(version: 2023_11_15_075445) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.text "shift_data"
+    t.integer "org_id"
+    t.index ["org_id"], name: "index_weekly_plans_on_org_id"
   end
 
 end

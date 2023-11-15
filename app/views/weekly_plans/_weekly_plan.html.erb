@@ -1,10 +1,11 @@
 <div id="<%= dom_id weekly_plan %>">
 
   <p>
+    <%= @org.name %>
     <strong><%=t("week") %>:</strong>
     <%= weekly_plan.week_number %>
   </p>
-  <%= form_for(weekly_plan) do |form| %>
+  <%= form_for([@org,weekly_plan]) do |form| %>
 
     <% @i = 0 %>
     <%= render partial: 'shift', locals:{weekly_plan: weekly_plan,shift_manager: weekly_plan.first_shift_manager,i: @i, time_range: weekly_plan.first_shift_time, name: "משמרת בוקר - תופרים" ,number_of_volunteers: weekly_plan.first_shift_number_of_volunteers, number_of_days: 5}%>
@@ -13,9 +14,9 @@
     <%= render partial: 'shift', locals:{weekly_plan: weekly_plan,shift_manager: weekly_plan.second_shift_manager,i: @i ,time_range: weekly_plan.second_shift_time, name:"משמרת צהרים - הכנות", number_of_volunteers: weekly_plan.second_shift_number_of_volunteers, number_of_days: 4}%>
 
 <div style='padding-top:20px'>
-   <%= link_to t(:last_week) , weekly_plan_path(id: "#{Date.today.year}-#{weekly_plan.week_number - 1}")%>
+   <%= link_to t(:last_week) , org_weekly_plan_path(@org.id,id: "#{Date.today.year}-#{weekly_plan.week_number - 1}")%>
     <%= form.submit t(:update_plan) ,style: 'font-size:20px'%>
-   <%= link_to  t(:next_week) , weekly_plan_path(id: "#{Date.today.year}-#{weekly_plan.week_number + 1}")%>
+   <%= link_to  t(:next_week) , org_weekly_plan_path(@org.id, id: "#{Date.today.year}-#{weekly_plan.week_number + 1}")%>
   </div>
 <% end %>
 

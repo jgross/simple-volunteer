@@ -1,4 +1,5 @@
 class WeeklyPlan < ApplicationRecord
+  belongs_to :org, optional: true
     serialize :data, Array
     serialize :shift_data, JSON
     def sunday_of_cweek(year=Date.today.year)
@@ -10,6 +11,8 @@ class WeeklyPlan < ApplicationRecord
         
         return sunday
       end
+
+
     
       def first_shift_time
         self.shift_data ||={}

@@ -1,4 +1,4 @@
-<%= form_with(model: @weekly_plan) do |form| %>
+<%= form_with(model: [@org,@weekly_plan]) do |form| %>
     <% if @weekly_plan.errors.any? %>
       <div style="color: red">
         <h2><%= pluralize(@weekly_plan.errors.count, "error") %> prohibited this @weekly_plan from being saved:</h2>
