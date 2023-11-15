@@ -1,0 +1,13 @@
+he:
+  week: "שׁבוע"
+  first_shift: "משמרת בוקר"
+  second_shift: "משמרת אחהצ"
+  last_week: "שבוע קודם"
+  next_week: "שבוע הבא"
+  update_plan: "עדכן תוכנית"
+  first_shift_time: "משמרת ראשונה - זמנים"
+  first_shift_number_of_volunteers: "משמרת ראשונה - מספר מתנדבים"
+  first_shift_need_manager: "משמרת ראשונה -האם נדרש מנהל משמרת?"
+  second_shift_time: "משמרת שניה - זמנים"
+  second_shift_number_of_volunteers: "משמרת שניה - מספר מתנדבים"
+  second_shift_need_manager: "משמרת שניה -האם נדרש מנהל משמרת?"

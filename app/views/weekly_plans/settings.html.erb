@@ -14,30 +14,42 @@
 
 
     <div>
-    <%= form.label :first_shift_time, style: "display: block" %>
+    <%= form.label t(:first_shift_time), style: "display: block" %>
     <%= form.text_field :first_shift_time %>
   </div>
 
   
   <div>
-  <%= form.label :first_shift_number_of_volunteers, style: "display: block" %>
+  <%= form.label t(:first_shift_number_of_volunteers), style: "display: block" %>
   <%= form.text_field :first_shift_number_of_volunteers %>
+</div>
+
+  
+<div>
+<%= form.label t(:first_shift_need_manager), style: "display: block" %>
+<%= form.check_box :first_shift_manager %>
 </div>
   
 <div>
-<%= form.label :second_shift_time, style: "display: block" %>
+<%= form.label t(:second_shift_time), style: "display: block" %>
 <%= form.text_field :second_shift_time %>
 </div>
 
 
 <div>
-<%= form.label :second_shift_number_of_volunteers, style: "display: block" %>
+<%= form.label t(:second_shift_number_of_volunteers), style: "display: block" %>
 <%= form.text_field :second_shift_number_of_volunteers %>
 </div>
 
+<div>
+<%= form.label t(:second_shift_need_manager), style: "display: block" %>
+<%= form.check_box :second_shift_manager %>
+</div>
+  
+
 
     <div>
-      <%= form.submit %>
+      <%= form.submit t(:update_plan) %>
     </div>
   <% end %>
   

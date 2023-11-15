@@ -15,11 +15,13 @@
       <td rowspan=<%=number_of_volunteers+2 %>> <%= time_range%> </td>
     </tr>
      <tr>
+       <% if shift_manager %> 
        <td> מנהל משמרת</td>
         <%(0..number_of_days).each do |day| %>
           <% i += 1 %>
           <td style='background: #008000'><input  type='text' name="weekly_plan[data][]" value='<%= weekly_plan.data[i - 1] || nil %>'/></td>
       <%end %>
+      <% end %>
 
     </tr>
      <% (1..number_of_volunteers).each do |day| %>
@@ -30,10 +32,10 @@
          <% i += 1 %>
          <td style="border:1px solid gray">
          <input  type='text' placeholder="שם" name="weekly_plan[data][]" value='<%= weekly_plan.data[i - 1] || nil %>'/><br/>
-         <% i += 1 %>
-         <input  type='text' placeholder="הכנות/תפירה" name="weekly_plan[data][]" value='<%= weekly_plan.data[i - 1] || nil %>'/>
          </td>
        <%end %>
      </tr>
      <% end %>
+
+     
 </table>

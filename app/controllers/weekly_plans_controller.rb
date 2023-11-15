@@ -48,6 +48,6 @@ class WeeklyPlansController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def weekly_plan_params
-      params.require(:weekly_plan).permit(:year,:first_shift_time,:first_shift_number_of_volunteers,:second_shift_time,:second_shift_number_of_volunteers, :week_number,data: [])
+      params.require(:weekly_plan).permit(:first_shift_manager,:second_shift_manager, :year,:first_shift_time,:first_shift_number_of_volunteers,:second_shift_time,:second_shift_number_of_volunteers, :week_number,data: [])
     end
 end

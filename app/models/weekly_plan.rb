@@ -16,7 +16,7 @@ class WeeklyPlan < ApplicationRecord
         self.shift_data["first"] ||= {}
         self.shift_data["first"]["time"] ||= '08:00-12:00'
         self.shift_data["first"]["time"]
-      end
+      end        
 
       def first_shift_time=(time)
         self.shift_data ||={}
@@ -24,6 +24,32 @@ class WeeklyPlan < ApplicationRecord
         self.shift_data["first"]["time"] = time
         self.shift_data["first"]["time"]
       end
+
+      def first_shift_manager
+        self.shift_data ||={}
+        self.shift_data["first"] ||= {}
+        self.shift_data["first"]["manager"] ||= true 
+      end 
+
+      def first_shift_manager=(need_a_manager)
+        self.shift_data ||={}
+        self.shift_data["first"] ||= {}
+        self.shift_data["first"]["manager"] = need_a_manager == "1"
+      end 
+
+      def second_shift_manager
+        self.shift_data ||={}
+        self.shift_data["second"] ||= {}
+        self.shift_data["second"]["manager"] ||= false 
+      end 
+
+      def second_shift_manager=(need_a_manager)
+        self.shift_data ||={}
+        self.shift_data["second"] ||= {}
+        self.shift_data["second"]["manager"] = need_a_manager == "1"
+      end 
+
+      
 
       def first_shift_number_of_volunteers
         self.shift_data ||= {}
@@ -60,7 +86,6 @@ class WeeklyPlan < ApplicationRecord
       end
 
       def second_shift_number_of_volunteers=(num)
-        debugger
         self.shift_data ||={}
         self.shift_data["second"] ||= {}
         self.shift_data["second"]["number_of_volunteers"] = num
