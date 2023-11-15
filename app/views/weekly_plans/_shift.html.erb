@@ -29,7 +29,10 @@
        <%(1..number_of_days+1).each do |vol| %>
          <% i += 1 %>
          <td style="border:1px solid gray">
-         <input  type='text' name="weekly_plan[data][]" value='<%= weekly_plan.data[i - 1] || nil %>'/>  </td>
+         <input  type='text' placeholder="שם" name="weekly_plan[data][]" value='<%= weekly_plan.data[i - 1] || nil %>'/><br/>
+         <% i += 1 %>
+         <input  type='text' placeholder="הכנות/תפירה" name="weekly_plan[data][]" value='<%= weekly_plan.data[i - 1] || nil %>'/>
+         </td>
        <%end %>
      </tr>
      <% end %>

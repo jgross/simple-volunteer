@@ -16,6 +16,10 @@ class WeeklyPlansController < ApplicationController
   end
 
 
+  def settings
+    
+  end 
+  
   # PATCH/PUT /weekly_plans/1 or /weekly_plans/1.json
   def update
     respond_to do |format|
