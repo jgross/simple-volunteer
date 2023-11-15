@@ -1,5 +1,5 @@
 class WeeklyPlansController < ApplicationController
-  before_action :set_weekly_plan, only: %i[ show edit update destroy ]
+  before_action :set_weekly_plan, only: %i[settings show edit update destroy ]
 
   # GET /weekly_plans or /weekly_plans.json
   def index
@@ -19,7 +19,7 @@ class WeeklyPlansController < ApplicationController
   def settings
     
   end 
-  
+
   # PATCH/PUT /weekly_plans/1 or /weekly_plans/1.json
   def update
     respond_to do |format|
@@ -48,6 +48,6 @@ class WeeklyPlansController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def weekly_plan_params
-      params.require(:weekly_plan).permit(:year, :week_number,data: [])
+      params.require(:weekly_plan).permit(:year,:first_shift_time,:first_shift_number_of_volunteers,:second_shift_time,:second_shift_number_of_volunteers, :week_number,data: [])
     end
 end
